@@ -9,3 +9,6 @@ I am starting my journey to move from networking into application security.
 My first project will be to set up a RHEL headless server (hypervisor) in my home lab and then to place a KALI Vm within it.
 
 In March I will begin to study for the linux + to dive deeper into linux and to also renew my sec+.
+
+
+Today I am reteaching myself the art of using markdown again so i can write that sweet sweet, documentation in style.
