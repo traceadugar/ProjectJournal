@@ -18,6 +18,10 @@
 ## Case
 ![Case](./Images%20Folder/Case.png)
 
+## Fans
+![120mm x4](./Images%20Folder/120mm%20Fans.png)
+![140mm x3](./Images%20Folder/140mm%20Fans.png)
+
 ## CPU Cooler
 ![CPU Cooler](./Images%20Folder/CPU%20Cooler.png)
 
