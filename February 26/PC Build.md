@@ -1,29 +1,27 @@
-# February 26 – PC Build Documentation
+# PC Build (Feb 26)
 
-## Final Parts List
+## CPU
+![CPU](./Images%20Folder/CPU.png)
 
-### CPU
-AMD Ryzen 7 7800X3D  
-![CPU](./images/cpu.png)
+## GPU
+![GPU](./Images%20Folder/GPU.png)
 
-### GPU
-Gigabyte RTX 5070 Ti Windforce OC SFF  
-![GPU](./images/gpu.png)
+## Motherboard
+![Motherboard](./Images%20Folder/Motherboard.png)
 
-### Motherboard
-Asus TUF Gaming B650E-E WiFi  
-![Motherboard](./images/motherboard.png)
+## RAM
+![RAM](./Images%20Folder/RAM.png)
 
-### Memory
-G.Skill Flare X5 32GB DDR5-6000 CL28  
-![Memory](./images/memory.png)
+## PSU
+![PSU](./Images%20Folder/PSU.png)
 
-### Storage
-WD Black SN850X 2TB  
-WD Black SN850X 1TB  
-WD Black 8TB HDD  
-![Storage](./images/storage.png)
+## Case
+![Case](./Images%20Folder/Case.png)
 
-### Power Supply
-be quiet! Dark Power 12 1000W Titanium  
-![PSU](./images/psu.png)
+## CPU Cooler
+![CPU Cooler](./Images%20Folder/CPU%20Cooler.png)
+
+## Storage
+![1TB NVME](./Images%20Folder/1TB%20NVME.png)
+![2TN NVME](./Images%20Folder/2TN%20NVME.png)
+![8TB Storage](./Images%20Folder/8TB%20Storage.png)
