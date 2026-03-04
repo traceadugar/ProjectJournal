@@ -17,7 +17,7 @@ My goal is to build a PC that is great to game on, as well as to be the center o
 3. It must have precise aircooling to run as cool as possible to keep performance at its peak.  
 4. It must have slight positive pressure to keep dust from accumulating.  
 
-![Airflow Diagram]()
+![Airflow Diagram](./Images%20Folder/Airflow_Diagram.png)
 
 ---
 
