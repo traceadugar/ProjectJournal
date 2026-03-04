@@ -25,25 +25,26 @@ My goal is to build a PC that is great to game on, as well as to be the center o
 
 Using the computer must be a joy, as I will be putting lots of hours on this machine.
 
-Monitor - Ultrawide monitor makes gaming feel new, as well as being 3 monitors without the center bezel.  
+**Monitor - Alienware AW3425DW**
+Ultrawide monitor makes gaming feel new, as well as being 3 monitors without the center bezel.  
 ![Monitor](./Images%20Folder/Monitor.png)
 
-Keyboard - Nuphy Node 100 in Beige w/ brown switches  
+**Keyboard - Nuphy Node 100 in Beige w/ brown switches**  
 The color reminds me of computers from when I was a child in the nineties, and the thocky keys sound like popcorn while I type which is pleasant for me.  
 Since I am not in the office, I can be happy with a noisier keyboard.  
 ![Keyboard](./Images%20Folder/Keyboard.png)
 
-Mouse - Pulsar Xlite Crazylight  
+**Mouse - Pulsar Xlite Crazylight**  
 I have never used an ultra light mouse it too is beige in color, this is a new one for me, I forget that my hand is sitting on something because of how little force it takes to move.  
 I do not believe this makes me a better gamer, but it is pleasant to use.  
 ![Mouse](./Images%20Folder/Mouse.png)
 
-DAC - Schiit Audio Gunnr  
+**DAC - Schiit Audio Gunnr**  
 I am an audiophile and I have never had a DAC on my computer just to handle sound. On my studio setup I have a DAC that handles both inputs and outputs of audio for audio / music production.  
 This pairs nicely with my headphones and makes controlling the loudness a more tactile experience and drives them to way higher volumes.  
 ![DAC](./Images%20Folder/DAC.png)
 
-HeadPhones - Audeze LCD-GX  
+**HeadPhones - Audeze LCD-GX**  
 These headphones are really comfortable and drive crystal clear sound, and their open back nature allows me to hear things in the room at low volumes.  
 ![Headphones](./Images%20Folder/headphones.png)
 
