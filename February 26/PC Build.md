@@ -45,7 +45,7 @@ This pairs nicely with my headphones and makes controlling the loudness a more t
 
 HeadPhones - Audeze LCD-GX  
 These headphones are really comfortable and drive crystal clear sound, and their open back nature allows me to hear things in the room at low volumes.  
-![Headphones](./Images%20Folder/heaphones.png)
+![Headphones](./Images%20Folder/headphones.png)
 
 ---
 
