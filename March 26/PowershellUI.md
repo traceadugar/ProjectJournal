@@ -64,7 +64,7 @@ script {
 - It disables the terminal bell and changes the Tab key behavior to menu-based completion.
 - It replaces the default prompt with a custom prompt that shows:
   - Whether the session is running as administrator
-  - The machine identity through the `MachineName` label
+  - The machine identity through the `$env:COMPUTERNAME `
   - The current folder name
   - The current time
   - A custom prompt marker
@@ -163,7 +163,7 @@ script {
   - It is useful when tracking work, commands, or troubleshooting flow.
 
 #### Host and Location Display
-- `Write-Host "MachineName " ...`
+- `Write-Host "$env:COMPUTERNAME  " ...`
   - Displays the terminal identity label.
   - In this case, it reinforces the machine identity and makes the shell feel personalized.
 - `Write-Host "$(Split-Path -Leaf (Get-Location)) " ...`
