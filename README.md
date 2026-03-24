@@ -1,5 +1,5 @@
 # ProjectJournal
-This is a journal of thing I have learned and things I am working on.
+This is a journal of things I have learned, and things I am working on.
 
 |2026|
 | ------------ |
