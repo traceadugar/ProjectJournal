@@ -3,48 +3,49 @@
 ## Script
 
 ---
-{
-    $Host.UI.RawUI.BackgroundColor = 'Black'
-    $Host.UI.RawUI.ForegroundColor = 'Gray'
-    Clear-Host
-    
-    Set-PSReadLineOption -Colors @{
-        Command   = 'Cyan'
-        Parameter = 'DarkYellow'
-        String    = 'Green'
-        Operator  = 'Magenta'
-        Variable  = 'White'
-        Number    = 'DarkCyan'
-        Member    = 'DarkCyan'
-        Type      = 'Gray'
-        Comment   = 'DarkGreen'
-        Keyword   = 'DarkMagenta'
-        Error     = 'Red'
-        Selection = 'DarkGray'
-    }
-    
-    Set-PSReadLineOption -BellStyle None
-    Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
-    
-    function prompt {
-    
-        $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(
-            [Security.Principal.WindowsBuiltInRole]::Administrator
-        )
-    
-        if ($isAdmin) {
-            Write-Host "[ADMIN] " -NoNewline -ForegroundColor DarkGreen
-        }
-    
-        $time = Get-Date -Format "HH:mm"
-    
-        Write-Host "MachineName " -NoNewline -ForegroundColor Cyan
-        Write-Host "$(Split-Path -Leaf (Get-Location)) " -NoNewline -ForegroundColor DarkYellow
-        Write-Host "$time" -ForegroundColor Gray
+script {
+
+        $Host.UI.RawUI.BackgroundColor = 'Black'
+        $Host.UI.RawUI.ForegroundColor = 'Gray'
+        Clear-Host
         
-        Write-Host ">> " -NoNewline -ForegroundColor Magenta
-        return " " 
-    }
+        Set-PSReadLineOption -Colors @{
+            Command   = 'Cyan'
+            Parameter = 'DarkYellow'
+            String    = 'Green'
+            Operator  = 'Magenta'
+            Variable  = 'White'
+            Number    = 'DarkCyan'
+            Member    = 'DarkCyan'
+            Type      = 'Gray'
+            Comment   = 'DarkGreen'
+            Keyword   = 'DarkMagenta'
+            Error     = 'Red'
+            Selection = 'DarkGray'
+        }
+        
+        Set-PSReadLineOption -BellStyle None
+        Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
+        
+        function prompt {
+        
+            $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(
+                [Security.Principal.WindowsBuiltInRole]::Administrator
+            )
+        
+            if ($isAdmin) {
+                Write-Host "[ADMIN] " -NoNewline -ForegroundColor DarkGreen
+            }
+        
+            $time = Get-Date -Format "HH:mm"
+        
+            Write-Host "MachineName " -NoNewline -ForegroundColor Cyan
+            Write-Host "$(Split-Path -Leaf (Get-Location)) " -NoNewline -ForegroundColor DarkYellow
+            Write-Host "$time" -ForegroundColor Gray
+            
+            Write-Host ">> " -NoNewline -ForegroundColor Magenta
+            return " " 
+        }
 }
 ---
 
