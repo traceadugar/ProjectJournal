@@ -39,7 +39,7 @@ script {
         
             $time = Get-Date -Format "HH:mm"
         
-            Write-Host "MachineName " -NoNewline -ForegroundColor Cyan
+            Write-Host "$env:COMPUTERNAME " -NoNewline -ForegroundColor Cyan
             Write-Host "$(Split-Path -Leaf (Get-Location)) " -NoNewline -ForegroundColor DarkYellow
             Write-Host "$time" -ForegroundColor Gray
             
