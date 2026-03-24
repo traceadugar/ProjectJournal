@@ -1,7 +1,7 @@
 # PowerShell Personalization
 
 ## Script
-![Powershell UI](/Images/PowerShell%Customization.png)
+![Powershell UI](/Images/PowerShellCustomization.png)
 ---
 script {
 
