@@ -9,27 +9,27 @@ I am starting this new account to document the projects that I am working on, so
 I am starting my journey to move from networking into Cloud Security.
 
 ### Certs:
-1. Linux+
-2. GCP Cloud Digital Leader
-3. GCP Associate Cloud Engineer
-4. GCP Cloud Security Engineer
+1. Linux+🟡
+2. GCP Cloud Digital Leader 🔴
+3. GCP Associate Cloud Engineer 🔴
+4. GCP Cloud Security Engineer 🔴
 
 ### Scripting:
-1. Bash
-2. Python
-3. Go
+1. Bash🟡
+2. Python 🔴
+3. Go 🔴
 
 ### AI Mastery:
-1. Prompt Effectiveness
-2. Token ujse Efficiency
-3. AI Orchestration
+1. Prompt Effectiveness🟡
+2. Token ujse Efficiency 🔴
+3. AI Orchestration 🔴
 
 ### Projects:
-1. Headless RHEL Server
-2. Bash Scripts
-3. Python Scripts
-4. Cloud Infra Projects
-5. Cloud Security Projects
+1. Headless RHEL Server🟡
+2. Bash Scripts 🔴
+3. Python Scripts 🔴
+4. Cloud Infra Projects 🔴
+5. Cloud Security Projects 🔴
 
 Today I am reteaching myself the art of using markdown again so i can write that sweet sweet, documentation in style.
 
