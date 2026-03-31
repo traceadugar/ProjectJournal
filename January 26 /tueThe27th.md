@@ -2,13 +2,36 @@
 
 My last github profile locked me out due to losing access to 2FA on an old cellphone.
 
-I am starting this new account to document the project that I am working on, software, hardware and otherwise.
+I am starting this new account to document the projects that I am working on, software, hardware and otherwise.
 
-I am starting my journey to move from networking into application security.
+I am starting my journey to move from networking into Cloud Security.
 
-My first project will be to set up a RHEL headless server (hypervisor) in my home lab and then to place a KALI Vm within it.
+### Certs:
+1. Linux+
+2. GCP Cloud Digital Leader
+3. GCP Associate Cloud Engineer
+4. GCP Cloud Security Engineer
 
-In March I will begin to study for the linux + to dive deeper into linux and to also renew my sec+.
+### Scripting:
+1. Bash
+2. Python
+3. Go
 
+### AI Mastery:
+1. Prompt Effectiveness
+2. Token ujse Efficiency
+3. AI Orchestration
+
+### Projects:
+1. Headless RHEL Server
+2. Bash Scripts
+3. Python Scripts
+4. Cloud Infra Projects
+5. Cloud Security Projects
 
 Today I am reteaching myself the art of using markdown again so i can write that sweet sweet, documentation in style.
+
+
+Naturally, other projects will show up as I see the need or want to do them.
+
+Thank you for reading, leave a star if anything is helpful.
