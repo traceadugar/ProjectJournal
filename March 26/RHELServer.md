@@ -96,7 +96,7 @@
 
 ## Optimization
 - Headless configuration reduces system overhead and resource consumption
-- SSD upgrade significantly improves system responsiveness and IO performance *********
+- SSD upgrade increases storage capacity and improves disk performance due to a higher-quality drive with better sustained read/write characteristics, benefiting system responsiveness and future VM workloads.
 - Static IP eliminates dependency on DHCP and reduces connection instability
 - Lightweight toolset installed to maintain minimal and efficient environment
 
