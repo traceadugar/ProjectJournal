@@ -25,7 +25,7 @@ I am starting my journey to move from networking into Cloud Security.
 3. AI Orchestration 🔴
 
 ### Projects:
-1. Headless RHEL Server 🟢
+1. [Headless RHEL Server ](https://github.com/traceadugar/ProjectJournal/blob/main/March%2026/RHELServer.md) 🟢
 2. Bash Scripts 🟡
 3. Python Scripts 🔴
 4. Cloud Infra Projects 🔴
