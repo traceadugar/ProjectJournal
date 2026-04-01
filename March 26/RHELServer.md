@@ -7,6 +7,11 @@
 - This build supports hands-on learning aligned with cloud and security engineering paths.
 
 ---
+## Images
+![Internals](./Images/RHELinternals.jpg)
+![Homelab1](./Images/RHELinhomelab.png)
+![Homelab2](./Images/RHELheadless.png)
+---
 
 ## Components & Requirements
 ### Hardware
