@@ -1,4 +1,4 @@
-# RHEL Server
+# Headless RHEL Server
 
 ## Overview
 - This project repurposes an office desktop (HP ProDesk G2) into a headless RHEL server for homelab use.
