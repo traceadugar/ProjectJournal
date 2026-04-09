@@ -2,7 +2,7 @@
 
 ![IntroExample](./images/palehorseintro.png)
 
-[Script is Here](./intoscript/intro.sh)
+[Script is Here](https://github.com/traceadugar/ProjectJournal/blob/main/April%2026/intoScript/intro.sh)
 
 ## Overview
 This script generates a custom terminal intro screen for my RHEL machine, **PaleHorse**, on login. It combines ASCII art, system metadata, and structured color output to create a clean, intentional startup experience.
