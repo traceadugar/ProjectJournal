@@ -8,7 +8,7 @@ I am starting this new account to document the projects that I am working on, so
 
 I am starting my journey to move from networking into Cloud Security.
 
-### Certs:
+### Certifications & Focus:
 1. Linux+ 🟡
 3. GCP Associate Cloud Engineer 🔴
 4. GCP Cloud Security Engineer 🔴
