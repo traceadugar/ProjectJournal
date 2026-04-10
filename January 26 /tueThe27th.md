@@ -10,7 +10,6 @@ I am starting my journey to move from networking into Cloud Security.
 
 ### Certs:
 1. Linux+ 🟡
-2. GCP Cloud Digital Leader 🔴
 3. GCP Associate Cloud Engineer 🔴
 4. GCP Cloud Security Engineer 🔴
 
