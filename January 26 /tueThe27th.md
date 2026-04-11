@@ -21,7 +21,7 @@ I am starting my journey to move from networking into Cloud Security.
 ### AI Mastery:
 1. Prompt Effectiveness 🟡
 2. Token use Efficiency 🔴
-3. AI Orchestration 🔴
+3. AI Orchestration 🟡
 
 ### Projects:
 1. [Headless RHEL Server ](https://github.com/traceadugar/ProjectJournal/blob/main/March%2026/RHELServer.md) 🟢
