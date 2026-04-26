@@ -1,3 +1,5 @@
+[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
+
 # PC Build (Feb 26)
 
 ## Objective
@@ -101,3 +103,5 @@ These headphones are really comfortable and drive crystal clear sound, and their
 ![1TB NVME](./Images%20Folder/1TB%20NVME.png)
 ![2TN NVME](./Images%20Folder/2TN%20NVME.png)
 ![8TB Storage](./Images%20Folder/8TB%20Storage.png)
+
+[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
