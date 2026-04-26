@@ -1,3 +1,5 @@
+[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
+
 ## What Have I been up to?
 
 My last github profile locked me out due to losing access to 2FA on an old cellphone.
