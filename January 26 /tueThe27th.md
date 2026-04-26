@@ -10,8 +10,11 @@ I am starting my journey to move from networking into Cloud Security.
 
 ### Certifications & Focus:
 1. Linux+ 🟡
-3. GCP Associate Cloud Engineer 🔴
-4. GCP Cloud Security Engineer 🔴
+2. GCP Associate Cloud Engineer 🔴
+3. Terraform 🔴
+4. Kubernetes 🔴
+5. GCP Cloud Security Engineer 🔴
+6. FinOps 🔴
 
 ### Scripting:
 1. Bash 🟡
@@ -29,7 +32,13 @@ I am starting my journey to move from networking into Cloud Security.
 3. Python Scripts 🔴
 4. Cloud Infra Projects 🔴
 5. Cloud Security Projects 🔴
+6. Capstone 🔴
+7. Mini Rack 🔴
+8. Go Scripts 🔴
+9. Linux Game Console 🔴
 
 Naturally, other projects will show up as I see the need or want to do them.
 
 Thank you for reading, leave a star if anything is helpful.
+
+[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
