@@ -1,3 +1,5 @@
+[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
+
 # Headless RHEL Server
 
 ## Overview
@@ -117,3 +119,6 @@
 - Using `nmcli` for reliable network configuration in server environments
 - Handling repository limitations through source compilation
 - Structuring systems for repeatable deployment and documentation
+
+
+[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
