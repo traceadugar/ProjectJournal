@@ -1,3 +1,5 @@
+[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
+
 # PowerShell Personalization
 
 ## Script
@@ -230,3 +232,5 @@ script {
 - Small usability changes, such as better syntax highlighting and cleaner prompts, reduce friction during repeated daily use.
 - Including context like privilege level and time makes the shell more informative without making it overly busy.
 - A good terminal setup should support speed, clarity, and awareness rather than just looking different.
+
+[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
