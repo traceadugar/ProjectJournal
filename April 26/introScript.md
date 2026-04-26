@@ -1,3 +1,5 @@
+[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
+
 # PaleHorse Intro Script
 
 ![IntroExample](./images/palehorseintro.png)
@@ -161,3 +163,5 @@ It also shows that I can:
 - Improve my environment in ways that are both practical and intentional
 
 While the ASCII art itself is static, the underlying structure is modular and reusable across future tooling.
+
+[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
