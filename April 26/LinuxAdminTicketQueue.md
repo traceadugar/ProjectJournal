@@ -1,5 +1,7 @@
 # Linux Admin Ticket Queue
 
+[Claude Context File Here](https://github.com/traceadugar/ProjectJournal/blob/main/April%2026/context_file/context.md)
+
 ## Overview
 
 The Linux Admin Ticket Queue is a stateful Linux practice lab designed to turn Linux+ study into realistic operator reps.
