@@ -1,5 +1,7 @@
 # Linux Admin Ticket Queue
 
+[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
+
 [Claude Context File Here](https://github.com/traceadugar/ProjectJournal/blob/main/April%2026/context_file/context.md)
 
 ## Overview
@@ -535,3 +537,5 @@ The real outcome of this project is not just a stronger Linux+ study routine.
 The outcome is better troubleshooting judgment.
 
 That is the skill I am actually building.
+
+[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
