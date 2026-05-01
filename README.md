@@ -8,3 +8,4 @@ This is a journal of things I have learned, and things I am working on.
 |[Powershell Customization](https://github.com/traceadugar/ProjectJournal/blob/main/March%2026/PowershellUI.md) |
 [RHEL Server Setup and Configuration](https://github.com/traceadugar/ProjectJournal/blob/main/March%2026/RHELServer.md) |
 | [Server Intro Script](https://github.com/traceadugar/ProjectJournal/blob/main/April%2026/introScript.md) |
+|[Claude Linux Ticket Queue Simulator](https://github.com/traceadugar/ProjectJournal/blob/main/April%2026/LinuxAdminTicketQueue.md) |
