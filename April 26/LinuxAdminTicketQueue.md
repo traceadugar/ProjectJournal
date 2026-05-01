@@ -506,24 +506,6 @@ The resolution note is not extra. It is part of the work. A good Linux admin sho
 
 ---
 
-## Future Improvements
-
-Future improvements for this project include:
-
-- adding Git tracking for environment state changes
-- creating sample completed tickets
-- adding more advanced mixed-incident scenarios
-- building a scoring rubric
-- adding a command comfort rating system
-- creating separate RHEL and Ubuntu tracks
-- adding SELinux-specific tickets
-- adding cloud VM scenarios
-- adding Terraform-based lab deployment
-- creating a disposable VM image for repeatable resets
-- turning common weak areas into targeted drills
-
----
-
 ## Final Reflection
 
 The Linux Admin Ticket Queue is a deliberate-practice system for building Linux operator skill.
