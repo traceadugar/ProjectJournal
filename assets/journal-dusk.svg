@@ -3,22 +3,32 @@
   <desc id="description">Linux, systems &amp; AI-assisted learning. A dusk seaside scene with a rotating lighthouse beam that illuminates the journal heading.</desc>
   <defs>
     <clipPath id="edge"><rect x="1" y="1" width="1198" height="238" rx="24"/></clipPath>
-    <radialGradient id="beam-strength" gradientUnits="userSpaceOnUse" cx="993.5" cy="84.5" r="1580">
+    <radialGradient id="beam-strength" gradientUnits="userSpaceOnUse" cx="993.5" cy="84.5" r="1800">
       <stop offset="0" stop-color="white" stop-opacity="1"/>
       <stop offset=".25" stop-color="white" stop-opacity=".99"/>
-      <stop offset="1" stop-color="white" stop-opacity=".94"/>
+      <stop offset=".82" stop-color="white" stop-opacity=".96"/>
+      <stop offset=".93" stop-color="white" stop-opacity=".7"/>
+      <stop offset=".99" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="beam-atmosphere" gradientUnits="userSpaceOnUse" cx="993.5" cy="84.5" r="1800">
+      <stop offset="0" stop-color="white" stop-opacity=".9"/>
+      <stop offset=".18" stop-color="white" stop-opacity=".72"/>
+      <stop offset=".5" stop-color="white" stop-opacity=".36"/>
+      <stop offset=".74" stop-color="white" stop-opacity=".08"/>
+      <stop offset=".9" stop-color="white" stop-opacity="0"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
     </radialGradient>
     <filter id="beam-soften" x="-10%" y="-15%" width="120%" height="130%" color-interpolation-filters="sRGB">
-      <feGaussianBlur stdDeviation="28"/>
+      <feGaussianBlur stdDeviation="40"/>
     </filter>
     <mask id="lighthouse-sweep" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="0" y="0" width="1200" height="240" style="mask-type:alpha">
       <g class="beam-rotor">
-        <path d="M993.5 84.5L-574.723 -108.054A1580 1580 0 0 0 -574.723 277.054Z" fill="url(#beam-strength)"/>
+        <path d="M993.5 84.5L923.5 76.5L-176.5 62.5Q-554.5 76.14 -806.5 84.5Q-554.5 92.86 -176.5 106.5L923.5 92.5Z" fill="url(#beam-strength)"/>
       </g>
     </mask>
     <mask id="lighthouse-glow" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="0" y="0" width="1200" height="240" style="mask-type:alpha">
       <g class="beam-rotor">
-        <path d="M993.5 84.5L-517.462 -377.447A1580 1580 0 0 0 -517.462 546.447Z" fill="url(#beam-strength)" filter="url(#beam-soften)"/>
+        <path d="M993.5 84.5L-779.154 -228.067A1800 1800 0 0 0 -779.154 397.067Z" fill="url(#beam-atmosphere)" filter="url(#beam-soften)"/>
       </g>
     </mask>
     <radialGradient id="lantern-halo">
@@ -26,16 +36,16 @@
       <stop offset="1" stop-color="#fce0a2" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="viewer-glow">
-      <stop offset="0" stop-color="#fce0a2" stop-opacity="1"/>
-      <stop offset=".6" stop-color="#fce0a2" stop-opacity=".6"/>
-      <stop offset="1" stop-color="#fce0a2" stop-opacity="0"/>
+      <stop offset="0" stop-color="#fff6df" stop-opacity="1"/>
+      <stop offset=".6" stop-color="#fff6df" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#fff6df" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <style>
     .sky{fill:#051026}.wash{fill:#1e2046}.coast{fill:#4a4fae}.ocean{fill:#113888}.sun{fill:#fce0a2}.tower{fill:#f2e5e3}.roof{fill:#fce0a2}.window{fill:#fce0a2}.ink{fill:#f2e5e3}.muted{fill:#cebdda}.accent{fill:#fce0a2}.gold{fill:#4a4fae}.line{fill:none;stroke:#051026;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.wave{fill:none;stroke:#cebdda;stroke-width:2;stroke-linecap:round;opacity:.65}.border{fill:none;stroke:#4a4fae;stroke-width:2}
     .beam-rotor{transform-box:view-box;transform-origin:993.5px 84.5px;animation:beacon-orbit 16s linear infinite,beacon-depth 16s linear infinite}
-    .beam-light{fill:#fce0a2}
-    .beam-halo{fill:#fce0a2;opacity:0.11}
+    .beam-light{fill:#fff9ed}
+    .beam-halo{fill:#fff1d7;opacity:0.42}
     .beam-ink{fill:#051026}
     .beam-front-glint{animation:beacon-front 16s linear infinite}
     @keyframes beacon-orbit{0.000000%{transform:scale(1,0.12)}3.125000%{transform:scale(0.980785,0.135217)}6.250000%{transform:scale(0.92388,0.149849)}9.375000%{transform:scale(0.83147,0.163334)}12.500000%{transform:scale(0.707107,0.175154)}15.625000%{transform:scale(0.55557,0.184855)}18.750000%{transform:scale(0.382683,0.192063)}21.875000%{transform:scale(0.19509,0.196501)}25.000000%{transform:scale(0,0.198)}28.125000%{transform:scale(-0.19509,0.196501)}31.250000%{transform:scale(-0.382683,0.192063)}34.375000%{transform:scale(-0.55557,0.184855)}37.500000%{transform:scale(-0.707107,0.175154)}40.625000%{transform:scale(-0.83147,0.163334)}43.750000%{transform:scale(-0.92388,0.149849)}46.875000%{transform:scale(-0.980785,0.135217)}50.000000%{transform:scale(-1,0.12)}53.125000%{transform:scale(-0.980785,0.12)}56.250000%{transform:scale(-0.92388,0.12)}59.375000%{transform:scale(-0.83147,0.12)}62.500000%{transform:scale(-0.707107,0.12)}65.625000%{transform:scale(-0.55557,0.12)}66.666667%{transform:scale(-0.5,0.12)}68.750000%{transform:scale(-0.382683,0.12)}71.875000%{transform:scale(-0.19509,0.12)}75.000000%{transform:scale(0,0.12)}78.125000%{transform:scale(0.19509,0.12)}78.333333%{transform:scale(0.207912,0.12)}81.250000%{transform:scale(0.382683,0.12)}84.375000%{transform:scale(0.55557,0.12)}87.500000%{transform:scale(0.707107,0.12)}90.625000%{transform:scale(0.83147,0.12)}93.750000%{transform:scale(0.92388,0.12)}96.875000%{transform:scale(0.980785,0.12)}100.000000%{transform:scale(1,0.12)}}
