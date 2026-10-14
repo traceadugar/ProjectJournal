@@ -1,22 +1,39 @@
-[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
+[← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)
 
-# Headless RHEL Server
+# Headless RHEL server
+
+<sub>March 2026 · RHEL homelab</sub>
 
 ## Overview
+
 - This project repurposes an office desktop (HP ProDesk G2) into a headless RHEL server for homelab use.
 - The goal is to simulate a real-world enterprise server environment on physical hardware.
 - Focus areas include Linux administration, remote access, and system-level experimentation.
 - This build supports hands-on learning aligned with cloud and security engineering paths.
 
----
 ## Images
-![Internals](./Images/RHELinternals.jpg)
-![Homelab1](./Images/RHELinhomelab.png)
-![Homelab2](./Images/RHELheadless.png)
----
 
-## Components & Requirements
+<details>
+<summary>View the homelab photos</summary>
+
+<a href="./Images/RHELinternals.jpg"><img src="./Images/RHELinternals.jpg" alt="Opened HP ProDesk showing the SSD and cooling assembly" width="480"></a>
+
+<sub>Inside the HP ProDesk.</sub>
+
+<a href="./Images/RHELinhomelab.png"><img src="./Images/RHELinhomelab.png" alt="Rear of the HP ProDesk connected to power and the homelab network" width="680"></a>
+
+<sub>The server connected to the homelab.</sub>
+
+<a href="./Images/RHELheadless.png"><img src="./Images/RHELheadless.png" alt="Front of the HP ProDesk in its headless homelab setup" width="680"></a>
+
+<sub>The headless setup. Select any image to view it at full size.</sub>
+
+</details>
+
+## Components & requirements
+
 ### Hardware
+
 - HP ProDesk 600 G2
 - Intel i7-6700 (upgraded)
 - 1TB SSD (upgraded from 128GB)
@@ -24,17 +41,18 @@
 - 32GB Thumb Drive
 
 ### Software
+
 - Red Hat Enterprise Linux (RHEL)
 - Rufus
 
-### Network / Environment
+### Network / environment
+
 - Integrated into existing homelab network
 - Headless operation (no monitor/peripherals after setup)
 - Remote management via SSH
 
----
+## Setup process
 
-## Setup Process
 1. Replaced stock CPU and storage with upgraded components and created a bootable RHEL installation drive using Rufus.
 2. System initially halted during POST due to fan detection error; manually bypassed to proceed with installation. Replacement fan ordered for resolution.
 3. Verified system BIOS version and confirmed it was already up to date.
@@ -46,9 +64,8 @@
 9. Enabled network auto-connect to ensure persistence across reboots.
 10. Installed core utility packages for administration and monitoring.
 
----
+## Key configurations
 
-## Key Configurations
 - Network configuration performed using `nmcli` to bring up interface `eno1` and assign a static IP address.
 - Static IP assignment ensures consistent remote access and reliable lab environment behavior.
 - SSH configured to enable remote management from primary workstation, eliminating need for direct physical access.
@@ -63,9 +80,8 @@
   - `tmux` – session persistence
   - `btop` – system resource monitoring (compiled from source due to repository limitations)
 
----
+## Validation & testing
 
-## Validation & Testing
 - Verified network connectivity using:
   - `ping google.com`
 - Confirmed DNS resolution using `dig`
@@ -73,9 +89,8 @@
 - Verified system resource visibility and stability using `btop`
 - Confirmed network persistence and accessibility after reboot
 
----
-
 ## Troubleshooting
+
 - Fan detection error during POST:
   - System required manual confirmation to continue boot
   - Identified as hardware-level compatibility issue after CPU upgrade
@@ -86,39 +101,36 @@
   - `btop` not available in default repositories
   - Resolved by compiling from source
 
----
+## Security considerations
 
-## Security Considerations
 - Remote access restricted to SSH-based management
 - System designed to operate without direct physical interaction
 - Static IP assignment allows for controlled network access and segmentation within homelab
 - Default enterprise Linux security controls (firewall and SELinux) retained
 
----
-
 ## Optimization
+
 - Headless configuration reduces system overhead and resource consumption
 - SSD upgrade increases storage capacity and improves disk performance due to a higher-quality drive with better sustained read/write characteristics, benefiting system responsiveness and future VM workloads.
 - Static IP eliminates dependency on DHCP and reduces connection instability
 - Lightweight toolset installed to maintain minimal and efficient environment
 
----
+## Lessons learned
 
-## Lessons Learned
 - Enterprise Linux distributions require additional repositories or manual builds for certain tools
 - Hardware upgrades can introduce compatibility issues at the firmware level
 - Network persistence must be explicitly configured in headless environments
 - Building from source is sometimes necessary in restricted or minimal environments
 - Establishing a clean baseline system simplifies future troubleshooting and expansion
 
----
+## Reusable patterns
 
-## Reusable Patterns
 - Converting legacy office hardware into functional lab infrastructure
 - Establishing a headless Linux server with persistent remote access
 - Using `nmcli` for reliable network configuration in server environments
 - Handling repository limitations through source compilation
 - Structuring systems for repeatable deployment and documentation
 
+---
 
-[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
+[← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)

@@ -1,19 +1,23 @@
-[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
+[← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)
 
-# PaleHorse Intro Script
+# PaleHorse intro script
 
-![IntroExample](./images/palehorseintro.png)
+<sub>April 2026 · Bash scripting</sub>
 
-[Script is Here](https://github.com/traceadugar/ProjectJournal/blob/main/April%2026/intoScript/intro.sh)
+<a href="./images/palehorseintro.png"><img src="./images/palehorseintro.png" alt="PaleHorse terminal intro with horse ASCII art, a red wordmark, uptime, load, and RHEL version" width="480"></a>
+
+<sub>The PaleHorse login screen. Select the image to view it at full size.</sub>
+
+[View the Bash script](./intoScript/intro.sh)
 
 ## Overview
+
 This script generates a custom terminal intro screen for my RHEL machine, **PaleHorse**, on login. It combines ASCII art, system metadata, and structured color output to create a clean, intentional startup experience.
 
 This was a **self-directed side quest project**, built while learning Bash. I wrote it alongside AI-assisted iteration, using prompting to refine output, alignment, color behavior, and formatting until I got the result I wanted.
 
----
+## What this does
 
-## What This Does
 - Clears the terminal for a clean entry point
 - Renders a stylized ASCII horse with layered grayscale accents
 - Displays a custom **PaleHorse** logo in red
@@ -23,23 +27,22 @@ This was a **self-directed side quest project**, built while learning Bash. I wr
   - Linux Distribution
   - OS Version
 
----
+## Why I built this
 
-## Why I Built This
 Most systems I’ve worked on display either very minimal login information or cluttered, low-UX startup output.
 
 I wanted something that:
+
 - Feels intentional and owned
 - Prioritizes readability and structure
 - Gives immediate system awareness
 - Reflects the identity of the machine
 - Reinforces my Bash and terminal formatting skills
 
----
+## Key concepts used
 
-## Key Concepts Used
+### Environment awareness
 
-### Environment Awareness
 ```bash
 . /etc/os-release
 ```
@@ -47,7 +50,7 @@ I wanted something that:
 - Dynamically loads distro name and version
 - Reflects real-world system introspection practices
 
-### Command Parsing
+### Command parsing
 
 ```bash
 UPTIME=$(uptime -p)
@@ -57,7 +60,7 @@ LOAD=$(uptime | awk -F'load average: ' '{print $2}')
 - Extracts human-readable uptime
 - Uses `awk` to isolate load averages cleanly
 
-### 256-Color Terminal Control
+### 256-color terminal control
 
 ```bash
 LIGHT_GRAY=$'\033[38;5;245m'
@@ -74,7 +77,7 @@ NC=$'\033[0m'
   - Labels (red)
   - Data (soft gray)
 
-### Inline Text Transformation
+### Inline text transformation
 
 ```bash
 line="${line//%/${LIGHT_GRAY}%${NC}}"
@@ -88,7 +91,7 @@ line="${line//C/${DARK_GRAY}C${NC}}"
   - `O` → eye
   - `C` → nostril
 
-### Structured Output Formatting
+### Structured output formatting
 
 ```bash
 printf "%bUptime:%b %b%-30s%b %bDistro:%b %b%s%b\n" \
@@ -100,9 +103,7 @@ printf "%bUptime:%b %b%-30s%b %bDistro:%b %b%s%b\n" \
 - Creates a clean separation between labels and values
 - Keeps the boot screen informative without becoming cluttered
 
----
-
-## AI-Assisted Development
+## AI-assisted development
 
 This project was built using **intentional prompting alongside hands-on scripting**.
 
@@ -123,18 +124,14 @@ This demonstrates growing skill in:
 - Human-in-the-loop development
 - Using AI as a development multiplier
 
----
-
 ## Sources
 
-- Horse ASCII: https://www.asciiart.eu/animals/horses
+- Horse ASCII: [ASCII Art Archive](https://www.asciiart.eu/animals/horses)
 - Horse credited as: **unknown**
-- Font generator for `PaleHorse`: https://patorjk.com/software/taag/
+- Font generator for `PaleHorse`: [Text to ASCII Art Generator](https://patorjk.com/software/taag/)
 - ASCII font used: **Classy**
 
----
-
-## What This Enables
+## What this enables
 
 - Immediate system awareness on login
 - Cleaner workflow before starting work
@@ -143,8 +140,6 @@ This demonstrates growing skill in:
   - parsing
   - color handling
   - terminal presentation
-
----
 
 ## Reflection
 
@@ -164,4 +159,6 @@ It also shows that I can:
 
 While the ASCII art itself is static, the underlying structure is modular and reusable across future tooling.
 
-[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
+---
+
+[← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)

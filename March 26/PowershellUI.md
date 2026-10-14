@@ -1,10 +1,23 @@
-[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
+[← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)
 
-# PowerShell Personalization
+# PowerShell personalization
+
+<sub>March 2026 · PowerShell customization</sub>
+
+## Overview
+
+- This project customizes the PowerShell terminal to improve readability, reduce friction, and create a more intentional command-line workspace.
+- The goal was not only visual personalization, but also functional improvement through better syntax highlighting, cleaner prompt information, and faster command completion behavior.
+- This setup reflects the idea that a terminal should feel like a purpose-built tool rather than a default utility.
+- The customization supports day-to-day command-line use by making important information easier to see at a glance.
 
 ## Script
-![Powershell UI](./Images/PowerShellCustomization.png)
----
+
+<img src="./Images/PowerShellCustomization.png" alt="Customized PowerShell terminal with syntax colors and a compact prompt" width="720">
+
+[View full-size screenshot](./Images/PowerShellCustomization.png)
+
+```powershell
 script {
 
         $Host.UI.RawUI.BackgroundColor = 'Black'
@@ -49,17 +62,10 @@ script {
             return " " 
         }
 }
----
-
-## Overview
-- This project customizes the PowerShell terminal to improve readability, reduce friction, and create a more intentional command-line workspace.
-- The goal was not only visual personalization, but also functional improvement through better syntax highlighting, cleaner prompt information, and faster command completion behavior.
-- This setup reflects the idea that a terminal should feel like a purpose-built tool rather than a default utility.
-- The customization supports day-to-day command-line use by making important information easier to see at a glance.
-
----
+```
 
 ## Architecture
+
 - The profile script runs when PowerShell starts.
 - It first sets the terminal background and foreground colors, then clears the screen so the new visual settings apply cleanly.
 - It configures PSReadLine syntax highlighting so different parts of commands are easier to distinguish.
@@ -71,23 +77,23 @@ script {
   - The current time
   - A custom prompt marker
 
----
-
-## Components & Requirements
+## Components & requirements
 
 ### Hardware
+
 - Windows PC
 
 ### Software
+
 - PowerShell
 
 ### Environment
+
 - PowerShell profile script
 - Interactive terminal use on Windows
 
----
+## Setup process
 
-## Setup Process
 1. Open the PowerShell profile file.
 2. Add terminal color settings for background and foreground.
 3. Clear the terminal after applying those visual defaults.
@@ -103,11 +109,10 @@ script {
    - Print a custom prompt symbol
 9. Save the profile and restart PowerShell to test the result.
 
----
+## Key configurations
 
-## Key Configurations
+### Base terminal colors
 
-### Base Terminal Colors
 - `$Host.UI.RawUI.BackgroundColor = 'Black'`
   - Sets the terminal background to black.
   - This creates a high-contrast base that is easy to read.
@@ -118,7 +123,8 @@ script {
   - Clears the screen after applying the colors.
   - This ensures the updated visual settings are immediately reflected in the terminal window.
 
-### PSReadLine Syntax Highlighting
+### PSReadLine syntax highlighting
+
 - `Set-PSReadLineOption -Colors @{ ... }`
   - Assigns colors to different token types in PowerShell input.
   - This makes commands easier to parse visually before execution.
@@ -134,22 +140,26 @@ script {
   - It reduces mistakes by making command structure easier to interpret quickly.
   - It gives the shell a more refined and intentional feel.
 
-### Bell Behavior
+### Bell behavior
+
 - `Set-PSReadLineOption -BellStyle None`
   - Disables the terminal bell.
   - This removes unnecessary audible or visual interruptions during command-line work.
 
-### Tab Completion Behavior
+### Tab completion behavior
+
 - `Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete`
   - Changes the Tab key from standard completion to menu-based completion.
   - This is useful when exploring commands, parameters, or file paths because it shows available options more clearly.
 
-### Custom Prompt Function
+### Custom prompt function
+
 - `function prompt { ... }`
   - Overrides the default PowerShell prompt.
   - This allows the terminal to display more useful session context.
 
-#### Admin Check
+#### Admin check
+
 - The prompt checks whether the current PowerShell session is running with administrator privileges.
 - If true, it prints:
   - `[ADMIN]`
@@ -157,14 +167,16 @@ script {
   - It gives immediate visibility into session privilege level.
   - This helps prevent confusion when running commands that behave differently in elevated vs non-elevated shells.
 
-#### Time Display
+#### Time display
+
 - `$time = Get-Date -Format "HH:mm"`
   - Captures the current time in 24-hour format.
 - Why it matters:
   - It gives quick context while working in long terminal sessions.
   - It is useful when tracking work, commands, or troubleshooting flow.
 
-#### Host and Location Display
+#### Host and location display
+
 - `Write-Host "$env:COMPUTERNAME  " ...`
   - Displays the terminal identity label.
   - In this case, it reinforces the machine identity and makes the shell feel personalized.
@@ -172,14 +184,14 @@ script {
   - Displays only the current folder name rather than the full path.
   - This keeps the prompt clean and compact.
 
-#### Prompt Symbol
+#### Prompt symbol
+
 - `Write-Host ">> " -NoNewline -ForegroundColor Magenta`
   - Displays a custom prompt marker.
   - This gives the shell a more deliberate visual style than the default prompt.
 
----
+## Validation & testing
 
-## Validation & Testing
 - Confirm the terminal opens with a black background and gray default text.
 - Type sample commands and verify syntax colors appear as expected.
 - Test Tab completion and confirm a menu of options appears.
@@ -188,49 +200,50 @@ script {
 - Check that the current time appears in the prompt.
 - Verify that the prompt ends with the custom `>>` marker.
 
----
-
 ## Troubleshooting
 
-### Profile Changes Do Not Appear
+### Profile changes do not appear
+
 - Confirm the script was saved in the correct PowerShell profile path.
 - Restart PowerShell after saving the profile.
 - Check for syntax errors in the profile script.
 
-### Colors Do Not Display Correctly
+### Colors do not display correctly
+
 - Confirm the terminal host supports the configured colors.
 - Verify no other profile settings are overriding the PSReadLine color map.
 
-### Tab Completion Does Not Show MenuComplete
+### Tab completion does not show MenuComplete
+
 - Confirm PSReadLine is available and loaded.
 - Verify the key handler line is present and has no syntax issues.
 
-### Admin Label Never Appears
+### Admin label never appears
+
 - Make sure PowerShell is actually launched with elevated privileges.
 - Test by opening PowerShell with "Run as administrator."
 
----
+## Security considerations
 
-## Security Considerations
 - The prompt includes an admin indicator, which helps reduce the chance of forgetting when the shell is elevated.
 - This is useful because administrative sessions carry more risk when running destructive commands.
 - The profile does not introduce remote execution, credential storage, or privileged automation by itself.
 - As with any profile customization, changes should be reviewed carefully to avoid introducing unsafe commands at shell startup.
 
----
-
 ## Optimization
+
 - Showing only the current folder name keeps the prompt compact and easier to scan.
 - Including the time provides useful context without excessive clutter.
 - Using menu completion improves usability, especially when exploring commands or working with long paths.
 - The color palette balances readability with visual separation of syntax elements.
 
----
+## Lessons learned
 
-## Lessons Learned
 - Terminal customization can improve both aesthetics and functionality at the same time.
 - Small usability changes, such as better syntax highlighting and cleaner prompts, reduce friction during repeated daily use.
 - Including context like privilege level and time makes the shell more informative without making it overly busy.
 - A good terminal setup should support speed, clarity, and awareness rather than just looking different.
 
-[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
+---
+
+[← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)

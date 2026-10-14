@@ -1,8 +1,31 @@
+[← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)
+
 # Linux Admin Ticket Queue
 
-[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
+<sub>April 2026 · AI-guided Linux practice</sub>
 
-[Claude Context File Here](https://github.com/traceadugar/ProjectJournal/blob/main/April%2026/context_file/context.md)
+[View the Claude context file](./context_file/context.md)
+
+<details>
+<summary>On this page</summary>
+
+- [Overview](#overview)
+- [Why I built this](#why-i-built-this)
+- [How it works](#how-it-works)
+- [Claude Code skill](#claude-code-skill)
+- [Skills practiced](#skills-practiced)
+- [Ticket workflow](#ticket-workflow)
+- [Safety rules](#safety-rules)
+- [Difficulty tiers](#difficulty-tiers)
+- [Example ticket](#example-ticket-format)
+- [Example resolution](#example-resolution-workflow)
+- [Environment state tracking](#environment-state-tracking)
+- [Linux+ exam alignment](#linux-exam-alignment)
+- [Cloud and SRE relevance](#cloud-and-sre-relevance)
+- [Lessons learned](#lessons-learned)
+- [Final reflection](#final-reflection)
+
+</details>
 
 ## Overview
 
@@ -18,9 +41,7 @@ The core rule of the project is simple:
 
 > No answer is given before inspection. No shortcuts. No `chmod 777`. Just real Linux work.
 
----
-
-## Why I Built This
+## Why I built this
 
 While studying for CompTIA Linux+, I realized that memorizing commands is not enough.
 
@@ -41,9 +62,7 @@ The goal is to build durable operator instincts:
 
 This project turns certification study into a living practice environment.
 
----
-
-## What This Project Simulates
+## What this project simulates
 
 The Linux Admin Ticket Queue simulates a small Linux operations environment.
 
@@ -64,9 +83,7 @@ Future tickets are based on:
 
 This prevents the practice from feeling random. The server evolves as I work through the queue.
 
----
-
-## How It Works
+## How it works
 
 ```text
 I provide Claude Code with real Linux system information
@@ -89,16 +106,14 @@ The next ticket targets either a new Linux+ topic or a weak area
 The project uses three persistent files:
 
 | File | Purpose |
-|---|---|
+| --- | --- |
 | `environment_state.md` | Living server state updated after every ticket |
 | `ticket_log.md` | Completed ticket history |
 | `weak_areas.md` | Running gap tracker used to target future reps |
 
 These files act as the memory of the project.
 
----
-
-## Claude Code Skill
+## Claude Code skill
 
 To make the system reusable across sessions, I created a Claude Code skill called:
 
@@ -136,13 +151,11 @@ This was an important part of the project because the first version of the skill
 
 That troubleshooting became part of the project itself: the simulator needed proper structure before it could behave like a repeatable tool.
 
----
-
-## Skills Practiced
+## Skills practiced
 
 This lab is designed around Linux+ and real-world Linux operations.
 
-### Users, Groups, and Permissions
+### Users, groups, and permissions
 
 Commands and concepts:
 
@@ -163,7 +176,7 @@ Commands and concepts:
 - permission inheritance
 - avoiding `chmod 777`
 
-### Processes, Services, and Logs
+### Processes, services, and logs
 
 Commands and concepts:
 
@@ -177,7 +190,7 @@ Commands and concepts:
 - `journalctl`
 - service failure diagnosis
 
-### Packages, Repos, and Updates
+### Packages, repos, and updates
 
 Commands and concepts:
 
@@ -203,7 +216,7 @@ Commands and concepts:
 - firewall reasoning
 - service exposure
 
-### Storage and Mounts
+### Storage and mounts
 
 Commands and concepts:
 
@@ -215,7 +228,7 @@ Commands and concepts:
 - disk usage investigation
 - safe cleanup
 
-### SSH and Remote Access
+### SSH and remote access
 
 Commands and concepts:
 
@@ -237,7 +250,7 @@ Commands and concepts:
 - exit codes
 - safe automation habits
 
-### Security Hardening
+### Security hardening
 
 Commands and concepts:
 
@@ -249,9 +262,7 @@ Commands and concepts:
 - SELinux basics
 - avoiding risky shortcuts
 
----
-
-## Ticket Workflow
+## Ticket workflow
 
 Every ticket follows the same operational workflow:
 
@@ -286,9 +297,7 @@ I would run `id jordan` to verify whether the user is actually a member of the g
 
 That distinction is the point of the project.
 
----
-
-## Safety Rules
+## Safety rules
 
 The simulator enforces safety rules during every ticket:
 
@@ -305,9 +314,7 @@ The simulator enforces safety rules during every ticket:
 
 The project also includes a privacy warning before pasting system output into an AI tool. Public IPs, private hostnames, internal domain names, SSH banners, API keys, tokens, and production details should be redacted.
 
----
-
-## Difficulty Tiers
+## Difficulty tiers
 
 The ticket queue progresses through nine tiers.
 
@@ -327,9 +334,7 @@ The lab starts at Tier 1 regardless of experience level.
 
 The point is not speed. The point is depth, judgment, and repeatable troubleshooting.
 
----
-
-## Example Ticket Format
+## Example ticket format
 
 Each ticket is issued like a real support request.
 
@@ -355,9 +360,7 @@ Inspect before making changes.
 
 The ticket gives a symptom, not the answer.
 
----
-
-## Example Resolution Workflow
+## Example resolution workflow
 
 A clean resolution would involve:
 
@@ -386,9 +389,7 @@ The review would then update:
 - `ticket_log.md`
 - `weak_areas.md`
 
----
-
-## Environment State Tracking
+## Environment state tracking
 
 The environment state file is the source of truth for the simulator.
 
@@ -423,9 +424,7 @@ Resources should be marked clearly as:
 
 This prevents confusion between the actual server and the practice layer.
 
----
-
-## Linux+ Exam Alignment
+## Linux+ exam alignment
 
 This project maps directly to CompTIA Linux+ XK0-006 objectives.
 
@@ -443,9 +442,7 @@ Linux+ is not only about knowing commands. It is about working through a system,
 
 That is exactly what this project trains.
 
----
-
-## Cloud and SRE Relevance
+## Cloud and SRE relevance
 
 Although this project is Linux-focused, the workflow transfers directly to cloud operations, cloud security, and SRE-style work.
 
@@ -470,43 +467,39 @@ inspect → hypothesize → change carefully → verify → document
 
 That process applies whether the system is a homelab server, a cloud VM, a Kubernetes node, or a production incident.
 
----
-
-## Lessons Learned
+## Lessons learned
 
 This project reinforced several important lessons.
 
-### 1. Repetition Needs Context
+### 1. Repetition needs context
 
 Practicing random commands is useful, but realistic tickets make the commands stick better.
 
 A command becomes easier to remember when it is attached to a real problem.
 
-### 2. State Matters
+### 2. State matters
 
 A realistic environment should remember what changed.
 
 If every ticket is isolated, the practice feels artificial. By tracking environment state, future tickets can build on previous work.
 
-### 3. Least Privilege Has to Be Practiced
+### 3. Least privilege has to be practiced
 
 It is easy to know that `chmod 777` is bad. It is more valuable to practice finding the correct narrow fix under pressure.
 
-### 4. Good Troubleshooting Is Structured
+### 4. Good troubleshooting is structured
 
 The best habit is not guessing the fix. It is inspecting first, forming a hypothesis, and verifying the result.
 
-### 5. Tooling Matters
+### 5. Tooling matters
 
 The `/linux-ticket` skill reduced friction. Once the skill worked correctly, the simulator became easier to reuse across sessions.
 
-### 6. Documentation Is Part of the Skill
+### 6. Documentation is part of the skill
 
 The resolution note is not extra. It is part of the work. A good Linux admin should be able to explain what changed and why.
 
----
-
-## Final Reflection
+## Final reflection
 
 The Linux Admin Ticket Queue is a deliberate-practice system for building Linux operator skill.
 
@@ -520,4 +513,6 @@ The outcome is better troubleshooting judgment.
 
 That is the skill I am actually building.
 
-[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
+---
+
+[← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)

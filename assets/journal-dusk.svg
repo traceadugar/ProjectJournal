@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" role="img" aria-labelledby="title description">
+  <title id="title">Project Journal</title>
+  <desc id="description">Linux, systems &amp; AI-assisted learning. A dusk seaside scene with an original lighthouse illustration.</desc>
+  <defs>
+    <clipPath id="edge"><rect x="1" y="1" width="1198" height="238" rx="24"/></clipPath>
+  </defs>
+  <style>
+    .sky{fill:#051026}.wash{fill:#1e2046}.coast{fill:#4a4fae}.ocean{fill:#113888}.sun{fill:#fce0a2}.tower{fill:#f2e5e3}.roof{fill:#fce0a2}.window{fill:#fce0a2}.ink{fill:#f2e5e3}.muted{fill:#cebdda}.accent{fill:#fce0a2}.gold{fill:#4a4fae}.line{fill:none;stroke:#051026;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.wave{fill:none;stroke:#cebdda;stroke-width:2;stroke-linecap:round;opacity:.65}.border{fill:none;stroke:#4a4fae;stroke-width:2}
+  </style>
+  <g clip-path="url(#edge)">
+    <rect class="sky" width="1200" height="240"/>
+    <g aria-hidden="true">
+      <path class="wash" d="M827 240c-49-44-48-111 5-162 50-49 155-73 248-45 68 20 107 38 120 55v152Z"/>
+      <circle class="sun" cx="1081" cy="66" r="23"/>
+      <path class="coast" d="M817 240c19-34 53-46 96-49 55-3 61-45 103-40 40 5 40 33 85 26 36-5 66-7 99 7v56Z"/>
+      <path class="ocean" d="M730 240c35-45 83-48 139-36 52 11 98 7 140-1 66-12 102-20 191-2v39Z"/>
+      <path class="wave" d="M779 222c30-9 54-7 80-2m52 4c34 0 47-4 71-7m63-1c37-7 69-8 104-1"/>
+      <path class="wave" d="M895 235c38-1 71-5 104-10m70 4c26-3 50-2 76 2"/>
+      <path class="tower" d="m978 94-13 82h57l-13-82Z"/>
+      <path class="line" d="m978 94-13 82h57l-13-82Z"/>
+      <rect class="tower" x="976" y="74" width="35" height="20" rx="2"/>
+      <rect class="line" x="976" y="74" width="35" height="20" rx="2"/>
+      <path class="roof" d="m971 72 23-17 22 17Z"/>
+      <path class="line" d="m971 72 23-17 22 17Z"/>
+      <rect class="window" x="986" y="80" width="15" height="9" rx="1"/>
+      <path class="line" d="M970 143h46m-49 17h52m-25-35v8"/>
+      <path class="roof" d="M989 176v-19a5 5 0 0 1 10 0v19Z"/>
+      <path class="line" d="M953 178h81"/>
+      <rect class="accent" x="64" y="180" width="72" height="4" rx="2"/>
+      <rect class="gold" x="144" y="180" width="36" height="4" rx="2"/>
+    </g>
+    <g font-family="Segoe UI, Arial, sans-serif">
+      <text class="ink" x="62" y="103" font-size="52" font-weight="700" letter-spacing="2">Project Journal</text>
+      <text class="muted" x="64" y="147" font-size="21" font-weight="400">Linux, systems &amp; AI-assisted learning</text>
+    </g>
+  </g>
+  <rect class="border" x="1" y="1" width="1198" height="238" rx="24"/>
+</svg>

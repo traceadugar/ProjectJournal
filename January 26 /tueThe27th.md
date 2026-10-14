@@ -1,46 +1,50 @@
-[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
+[← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)
 
-## What Have I been up to?
+# Why I started this journal
 
-My last github profile locked me out due to losing access to 2FA on an old cellphone.
+<sub>January 27, 2026 · Journal origin · Revised October 14, 2026</sub>
 
-[Old Work](https://github.com/TraceDugar)
+## A new account, a continuing path
 
-I am starting this new account to document the projects that I am working on, software, hardware and otherwise.
+I started this account after losing access to the two-factor authentication on my old phone, which locked me out of my previous GitHub account. My [earlier work is still available on that profile](https://github.com/TraceDugar).
 
-I am starting my journey to move from networking into Cloud Security.
+This journal gives my newer work a home: software, hardware, Linux administration, and the decisions and troubleshooting behind those projects.
 
-### Certifications & Focus:
-1. Linux+ 🟡
-2. GCP Associate Cloud Engineer 🔴
-3. Terraform 🔴
-4. Kubernetes 🔴
-5. GCP Cloud Security Engineer 🔴
-6. FinOps 🔴
+I've worked in IT since **September 2023**. Network operations, field support, customer connectivity, and technical documentation have shaped how I approach a problem: understand the situation, inspect before changing anything, apply a focused fix, and verify the result.
 
-### Scripting:
-1. Bash 🟡
-2. Python 🔴
-3. Go 🔴
+## What I wanted to build
 
-### AI Mastery:
-1. Prompt Effectiveness 🟡
-2. Token use Efficiency 🔴
-3. AI Orchestration 🟢
+When I started this journal in January, my direction was to grow from networking toward cloud security. I wanted practical projects that would strengthen the Linux, scripting, and systems skills behind that goal.
 
-### Projects:
-1. [Headless RHEL Server ](https://github.com/traceadugar/ProjectJournal/blob/main/March%2026/RHELServer.md) 🟢
-2. Bash Scripts 🟡
-3. Python Scripts 🔴
-4. Cloud Infra Projects 🔴
-5. Cloud Security Projects 🔴
-6. Capstone 🔴
-7. Mini Rack 🔴
-8. Go Scripts 🔴
-9. Linux Game Console 🔴
+The original entry listed a broad roadmap of certifications, tools, and possible projects. Those were learning goals, and the colored status markers did not explain what I had actually completed. This revision makes that distinction clearer.
 
-Naturally, other projects will show up as I see the need or want to do them.
+| Documented work | What I practiced |
+| --- | --- |
+| [PC build](../February%2026/PC%20Build.md) | Hardware selection, assembly, configuration, and troubleshooting |
+| [PowerShell personalization](../March%2026/PowershellUI.md) | A more readable and informative command-line workspace |
+| [Headless RHEL server](../March%2026/RHELServer.md) | Linux setup, network persistence, SSH, and working through hardware and package issues |
+| [PaleHorse intro script](../April%2026/introScript.md) | Bash scripting and a welcoming interface for the lab |
+| [Linux Admin Ticket Queue](../April%2026/LinuxAdminTicketQueue.md) | AI-guided practice with inspection, diagnosis, verification, and resolution notes |
 
-Thank you for reading, leave a star if anything is helpful.
+My earned credentials include **CompTIA Security+**, **Google IT Support**, and **Google Cybersecurity**. [Credential details and verification links](https://traceportfolio.netlify.app/about#about) are on my portfolio. Cloud certifications and tools from the original roadmap were future interests, not credentials I had earned.
 
-[Home](https://github.com/traceadugar/ProjectJournal/blob/main/README.md)
+## How the work has developed
+
+By October 2026, my work also includes **AI-assisted software development** and systems automation. I use Claude Code, ChatGPT, and Codex to help explore problems, build, debug, and review results. I keep their role visible and use documentation and verification to explain what the work demonstrates.
+
+Two ongoing projects show that direction:
+
+- **[TanMar Safety Platform](https://traceportfolio.netlify.app/case-studies/tanmar-safety-platform)** — started August 2026. AI-assisted modernization of a legacy safety-training application and smaller HR applications into a bilingual platform. Development and production hardening continue; employer code and data remain private.
+- **[Aquarium](https://traceportfolio.netlify.app/case-studies/aquarium)** — started September 2026. A Godot simulation and game developed through prompting alone. I direct, playtest, and critique the work while AI agents implement the code and project changes. Alongside building a fun game, the project explores how context, coordination, and review support sustained AI development.
+
+These projects began after the original January entry. Their public case studies provide the current context; this page records how the journal started and where that path has led.
+
+## What comes next
+
+I want to keep building useful tools and stronger systems judgment. Linux, Python, automation, and security remain central to that work, with GCP as my intended starting point for deeper cloud experience.
+
+This journal will continue to include the projects that make sense for that path, along with the occasional hardware or usability project that catches my interest. The aim is to leave a clear record of what I tried, what worked, and what I learned.
+
+---
+
+[← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)
