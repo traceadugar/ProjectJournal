@@ -3,17 +3,8 @@
   <desc id="description">May 2026 · RHEL troubleshooting. A small sailboat at a sunny seaside.</desc>
   <defs>
     <clipPath id="edge"><rect x="1" y="1" width="1198" height="238" rx="24"/></clipPath>
-  </defs>
-  <style>
-    .sky{fill:#fff8e8}.wash{fill:#dff5f9}.coast{fill:#e5d0a1}.ocean{fill:#16636f}.sun{fill:#f6dcaf}.sail{fill:#fffcf6}.hull{fill:#834d37}.ink{fill:#081823}.muted{fill:#133b58}.accent{fill:#16636f}.gold{fill:#e5d0a1}.line{fill:#16636f}.wave{fill:#dff5f9}.border{fill:#e5d0a1}.rigging{fill:none;stroke:#16636f;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.wave{fill:none;stroke:#dff5f9;stroke-width:2;stroke-linecap:round;opacity:.65}.border{fill:none;stroke:#e5d0a1;stroke-width:2}
-  </style>
-  <g clip-path="url(#edge)">
-    <rect class="sky" width="1200" height="240"/>
-    <g aria-hidden="true">
-      <path class="wash" d="M827 240c-49-44-48-111 5-162 50-49 155-73 248-45 68 20 107 38 120 55v152Z"/>
-      <circle class="sun" cx="1122" cy="62" r="22"/>
-      <path class="coast" opacity=".55" d="M860 192c38-31 74-20 108-31 37-12 54-8 81 2 35 13 68-5 107-4 17 0 32 4 44 9v72H860Z"/>
-      <path class="ocean" d="M730 240c35-45 83-48 139-36 52 11 98 7 140-1 66-12 102-20 191-2v39Z"/>
+    <clipPath id="sailing-area"><rect x="790" y="24" width="410" height="216"/></clipPath>
+    <g id="boat">
       <path class="rigging" d="M1008 49v138m-87-17h158"/>
       <path class="sail" d="m998 61-74 101h74Z"/>
       <path class="rigging" d="m998 61-74 101h74Z"/>
@@ -24,8 +15,35 @@
       <path class="hull" d="M905 179h183l-23 24c-42 11-107 6-135-1Z"/>
       <path class="rigging" d="M905 179h183l-23 24c-42 11-107 6-135-1Z"/>
       <path class="sail" opacity=".9" d="M932 184h132l-6 6H938Z"/>
-      <path class="wave" d="M779 223c30-9 54-7 80-2m51 3c35 0 59-4 83-7m65 0c29-6 57-6 89 0"/>
-      <path class="wave" d="M895 235c38-1 71-5 104-10m70 4c26-3 50-2 76 2"/>
+    </g>
+  </defs>
+  <style>
+    .sky{fill:#fff8e8}.wash{fill:#dff5f9}.coast{fill:#e5d0a1}.ocean{fill:#16636f}.sun{fill:#f6dcaf}.sail{fill:#fffcf6}.hull{fill:#834d37}.ink{fill:#081823}.muted{fill:#133b58}.accent{fill:#16636f}.gold{fill:#e5d0a1}.line{fill:#16636f}.wave{fill:#dff5f9}.border{fill:#e5d0a1}.rigging{fill:none;stroke:#16636f;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.wave{fill:none;stroke:#dff5f9;stroke-width:2;stroke-linecap:round;opacity:.65}.border{fill:none;stroke:#e5d0a1;stroke-width:2}
+    .boat-track{animation:sail-by 24s linear infinite}
+    .boat-rock{transform-origin:1000px 184px;animation:gentle-bob 4s ease-in-out infinite}
+    .water-drift{animation:water-sway 8s ease-in-out infinite}
+    @keyframes sail-by{from{transform:translateX(0)}to{transform:translateX(540px)}}
+    @keyframes gentle-bob{0%,50%,100%{transform:translateY(0) rotate(0deg)}25%{transform:translateY(1.5px) rotate(0.6deg)}75%{transform:translateY(-1.5px) rotate(-0.6deg)}}
+    @keyframes water-sway{0%,50%,100%{transform:translateX(0)}25%{transform:translateX(4px)}75%{transform:translateX(-4px)}}
+    @media(prefers-reduced-motion:reduce){.boat-track,.boat-rock,.water-drift{animation:none;transform:none}}
+  </style>
+  <g clip-path="url(#edge)">
+    <rect class="sky" width="1200" height="240"/>
+    <g aria-hidden="true">
+      <path class="wash" d="M827 240c-49-44-48-111 5-162 50-49 155-73 248-45 68 20 107 38 120 55v152Z"/>
+      <circle class="sun" cx="1122" cy="62" r="22"/>
+      <path class="coast" opacity=".55" d="M860 192c38-31 74-20 108-31 37-12 54-8 81 2 35 13 68-5 107-4 17 0 32 4 44 9v72H860Z"/>
+      <path class="ocean" d="M730 240c35-45 83-48 139-36 52 11 98 7 140-1 66-12 102-20 191-2v39Z"/>
+      <g clip-path="url(#sailing-area)">
+        <g class="boat-track">
+          <g class="boat-rock"><use href="#boat"/></g>
+          <g transform="translate(-540 0)"><g class="boat-rock"><use href="#boat"/></g></g>
+        </g>
+        <g class="water-drift">
+          <path class="wave" d="M779 223c30-9 54-7 80-2m51 3c35 0 59-4 83-7m65 0c29-6 57-6 89 0"/>
+          <path class="wave" d="M895 235c38-1 71-5 104-10m70 4c26-3 50-2 76 2"/>
+        </g>
+      </g>
       <rect class="accent" x="64" y="180" width="72" height="4" rx="2"/>
       <rect class="gold" x="144" y="180" width="36" height="4" rx="2"/>
     </g>
