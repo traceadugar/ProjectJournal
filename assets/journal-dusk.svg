@@ -25,6 +25,11 @@
       <stop offset="0" stop-color="#fce0a2" stop-opacity=".38"/>
       <stop offset="1" stop-color="#fce0a2" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="viewer-glow">
+      <stop offset="0" stop-color="#fce0a2" stop-opacity="1"/>
+      <stop offset=".6" stop-color="#fce0a2" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#fce0a2" stop-opacity="0"/>
+    </radialGradient>
   </defs>
   <style>
     .sky{fill:#051026}.wash{fill:#1e2046}.coast{fill:#4a4fae}.ocean{fill:#113888}.sun{fill:#fce0a2}.tower{fill:#f2e5e3}.roof{fill:#fce0a2}.window{fill:#fce0a2}.ink{fill:#f2e5e3}.muted{fill:#cebdda}.accent{fill:#fce0a2}.gold{fill:#4a4fae}.line{fill:none;stroke:#051026;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.wave{fill:none;stroke:#cebdda;stroke-width:2;stroke-linecap:round;opacity:.65}.border{fill:none;stroke:#4a4fae;stroke-width:2}
@@ -32,9 +37,11 @@
     .beam-light{fill:#fce0a2}
     .beam-halo{fill:#fce0a2;opacity:0.11}
     .beam-ink{fill:#051026}
-    @keyframes beacon-orbit{from{transform:scaleY(0.12) rotate(-50deg)}to{transform:scaleY(0.12) rotate(310deg)}}
-    @keyframes beacon-depth{0.000000%{opacity:1}23.611111%{opacity:1}38.888889%{opacity:0}54.166667%{opacity:1}100.000000%{opacity:1}}
-    @media(prefers-reduced-motion:reduce){.beam-rotor{animation:none}.beam-layer{display:none}}
+    .beam-front-glint{animation:beacon-front 16s linear infinite}
+    @keyframes beacon-orbit{0.000000%{transform:scale(1,0.12)}3.125000%{transform:scale(0.980785,0.135217)}6.250000%{transform:scale(0.92388,0.149849)}9.375000%{transform:scale(0.83147,0.163334)}12.500000%{transform:scale(0.707107,0.175154)}15.625000%{transform:scale(0.55557,0.184855)}18.750000%{transform:scale(0.382683,0.192063)}21.875000%{transform:scale(0.19509,0.196501)}25.000000%{transform:scale(0,0.198)}28.125000%{transform:scale(-0.19509,0.196501)}31.250000%{transform:scale(-0.382683,0.192063)}34.375000%{transform:scale(-0.55557,0.184855)}37.500000%{transform:scale(-0.707107,0.175154)}40.625000%{transform:scale(-0.83147,0.163334)}43.750000%{transform:scale(-0.92388,0.149849)}46.875000%{transform:scale(-0.980785,0.135217)}50.000000%{transform:scale(-1,0.12)}53.125000%{transform:scale(-0.980785,0.12)}56.250000%{transform:scale(-0.92388,0.12)}59.375000%{transform:scale(-0.83147,0.12)}62.500000%{transform:scale(-0.707107,0.12)}65.625000%{transform:scale(-0.55557,0.12)}66.666667%{transform:scale(-0.5,0.12)}68.750000%{transform:scale(-0.382683,0.12)}71.875000%{transform:scale(-0.19509,0.12)}75.000000%{transform:scale(0,0.12)}78.125000%{transform:scale(0.19509,0.12)}78.333333%{transform:scale(0.207912,0.12)}81.250000%{transform:scale(0.382683,0.12)}84.375000%{transform:scale(0.55557,0.12)}87.500000%{transform:scale(0.707107,0.12)}90.625000%{transform:scale(0.83147,0.12)}93.750000%{transform:scale(0.92388,0.12)}96.875000%{transform:scale(0.980785,0.12)}100.000000%{transform:scale(1,0.12)}}
+    @keyframes beacon-depth{0.000000%{opacity:1}3.125000%{opacity:1}6.250000%{opacity:1}9.375000%{opacity:1}12.500000%{opacity:1}15.625000%{opacity:1}18.750000%{opacity:1}21.875000%{opacity:1}25.000000%{opacity:1}28.125000%{opacity:1}31.250000%{opacity:1}34.375000%{opacity:1}37.500000%{opacity:1}40.625000%{opacity:1}43.750000%{opacity:1}46.875000%{opacity:1}50.000000%{opacity:1}53.125000%{opacity:0.8125}56.250000%{opacity:0.625}59.375000%{opacity:0.4375}62.500000%{opacity:0.25}65.625000%{opacity:0.0625}66.666667%{opacity:0}68.750000%{opacity:0}71.875000%{opacity:0}75.000000%{opacity:0}78.125000%{opacity:0.9375}78.333333%{opacity:1}81.250000%{opacity:1}84.375000%{opacity:1}87.500000%{opacity:1}90.625000%{opacity:1}93.750000%{opacity:1}96.875000%{opacity:1}100.000000%{opacity:1}}
+    @keyframes beacon-front{0.000000%{opacity:0}3.125000%{opacity:0}6.250000%{opacity:0}9.375000%{opacity:0}12.500000%{opacity:0}15.625000%{opacity:0}18.750000%{opacity:0.019157}21.875000%{opacity:0.372034}25.000000%{opacity:1}28.125000%{opacity:0.372034}31.250000%{opacity:0.019157}34.375000%{opacity:0}37.500000%{opacity:0}40.625000%{opacity:0}43.750000%{opacity:0}46.875000%{opacity:0}50.000000%{opacity:0}53.125000%{opacity:0}56.250000%{opacity:0}59.375000%{opacity:0}62.500000%{opacity:0}65.625000%{opacity:0}66.666667%{opacity:0}68.750000%{opacity:0}71.875000%{opacity:0}75.000000%{opacity:0}78.125000%{opacity:0}78.333333%{opacity:0}81.250000%{opacity:0}84.375000%{opacity:0}87.500000%{opacity:0}90.625000%{opacity:0}93.750000%{opacity:0}96.875000%{opacity:0}100.000000%{opacity:0}}
+    @media(prefers-reduced-motion:reduce){.beam-rotor,.beam-front-glint{animation:none}.beam-layer{display:none}}
   </style>
   <g clip-path="url(#edge)">
     <rect class="sky" width="1200" height="240"/>
@@ -48,6 +55,10 @@
       <rect class="beam-halo beam-layer" width="1200" height="240" mask="url(#lighthouse-glow)"/>
       <rect class="beam-light beam-layer" width="1200" height="240" mask="url(#lighthouse-sweep)"/>
       <circle cx="993.5" cy="84.5" r="26" fill="url(#lantern-halo)"/>
+      <g class="beam-layer beam-front-glint">
+        <ellipse cx="993.5" cy="84.5" rx="980" ry="70" fill="url(#viewer-glow)" opacity="0.18"/>
+        <circle cx="993.5" cy="84.5" r="58" fill="url(#lantern-halo)" opacity=".75"/>
+      </g>
       <path class="tower" d="m978 94-13 82h57l-13-82Z"/>
       <path class="line" d="m978 94-13 82h57l-13-82Z"/>
       <rect class="tower" x="976" y="74" width="35" height="20" rx="2"/>
