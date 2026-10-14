@@ -6,7 +6,7 @@
 
 # Project Journal
 
-A working record of what I build, investigate, and learn: a physical RHEL homelab, practical scripting, an AI-guided Linux ticket workflow, and the workstation behind it.
+A working record of what I build, investigate, and learn: AI-assisted applications, a Godot simulation, a bilingual portfolio, a physical RHEL homelab, and practical scripting.
 
 I'm **Trace Dugar**. I've worked in IT since **September 2023**, across network operations, field support, troubleshooting, and technical documentation. This journal connects that experience with my growing work in AI-assisted development, systems automation, and cloud security.
 
@@ -16,16 +16,22 @@ I'm **Trace Dugar**. I've worked in IT since **September 2023**, across network 
 
 | If you're interested in… | Read |
 | --- | --- |
-| Linux infrastructure and troubleshooting | [Headless RHEL server](March%2026/RHELServer.md) |
-| AI as a practical learning tool | [Linux Admin Ticket Queue](April%2026/LinuxAdminTicketQueue.md) |
-| A small, usable Bash project | [PaleHorse intro script](April%2026/introScript.md) |
+| AI-assisted application modernization | [TanMar Safety Platform](August%2026/TanMarSafetyPlatform.md) · In progress |
+| Prompting-only game development | [Aquarium](September%2026/Aquarium.md) · In progress |
+| Interface design, recovery, and deployment | [Portfolio recovery & seaside redesign](October%2026/PortfolioRefresh.md) |
+| Linux infrastructure and troubleshooting | [Headless RHEL server](March%2026/RHELServer.md) and [recorded ticket resolutions](May%2026/LinuxTicketResolutions.md) |
 
 ## Entries · 2026
 
-Newest months first. Entries record the project at the time it was written.
+Newest months first. Dates mark when the work began or took place; ongoing entries describe development progress.
 
 | Month | Entry | What it covers |
 | --- | --- | --- |
+| **October** | [GitHub profile and journal refresh](October%2026/GitHubRefresh.md) | Professional presentation, accurate project descriptions, and cohesive documentation |
+| **October** | [Portfolio recovery & seaside redesign](October%2026/PortfolioRefresh.md) | React recovery, synchronized lighting, bilingual usability, and deployment |
+| **September** | [Aquarium](September%2026/Aquarium.md) · In progress | Godot simulation, prompting-only development, context, and verification |
+| **August** | [TanMar Safety Platform](August%2026/TanMarSafetyPlatform.md) · In progress | AI-assisted modernization, training workflows, access controls, and verification |
+| **May** | [Linux ticket practice: two recorded resolutions](May%2026/LinuxTicketResolutions.md) | Account troubleshooting, least privilege, and retained evidence |
 | **April** | [Linux Admin Ticket Queue](April%2026/LinuxAdminTicketQueue.md) | Stateful AI-guided practice, careful diagnosis, and resolution notes |
 | **April** | [PaleHorse intro script](April%2026/introScript.md) | A Bash welcome screen for the Linux lab |
 | **March** | [Headless RHEL server](March%2026/RHELServer.md) | Repurposed hardware, networking, SSH, and setup troubleshooting |
@@ -35,7 +41,7 @@ Newest months first. Entries record the project at the time it was written.
 
 ## Go deeper
 
-The journal keeps the build notes and learning process. My [Linux lab case study](https://traceportfolio.netlify.app/case-studies/linux-ticket-queue) brings the project together with retained troubleshooting examples and their verification limits.
+The journal keeps the build notes and learning process. My [portfolio](https://traceportfolio.netlify.app/) brings the work together with public case studies for [TanMar](https://traceportfolio.netlify.app/case-studies/tanmar-safety-platform), [Aquarium](https://traceportfolio.netlify.app/case-studies/aquarium), and the [Linux lab](https://traceportfolio.netlify.app/case-studies/linux-ticket-queue), including retained development evidence where available.
 
 For the implementation details, read the [ticket simulator's original context file](April%2026/context_file/context.md) or the [PaleHorse Bash source](April%2026/intoScript/intro.sh).
 
