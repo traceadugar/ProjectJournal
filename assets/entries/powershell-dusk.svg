@@ -19,13 +19,16 @@
   </defs>
   <style>
     .sky{fill:#051026}.wash{fill:#1e2046}.coast{fill:#4a4fae}.ocean{fill:#113888}.sun{fill:#fce0a2}.sail{fill:#f2e5e3}.hull{fill:#4a4fae}.ink{fill:#f2e5e3}.muted{fill:#cebdda}.accent{fill:#fce0a2}.gold{fill:#4a4fae}.line{fill:#cebdda}.wave{fill:#cebdda}.border{fill:#4a4fae}.rigging{fill:none;stroke:#cebdda;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.wave{fill:none;stroke:#cebdda;stroke-width:2;stroke-linecap:round;opacity:.65}.border{fill:none;stroke:#4a4fae;stroke-width:2}
-    .boat-track{animation:sail-by 24s linear infinite}
-    .boat-rock{transform-origin:1000px 184px;animation:gentle-bob 4s ease-in-out infinite}
-    .water-drift{animation:water-sway 8s ease-in-out infinite}
-    @keyframes sail-by{from{transform:translateX(0)}to{transform:translateX(540px)}}
-    @keyframes gentle-bob{0%,50%,100%{transform:translateY(0) rotate(0deg)}25%{transform:translateY(1.5px) rotate(0.6deg)}75%{transform:translateY(-1.5px) rotate(-0.6deg)}}
-    @keyframes water-sway{0%,50%,100%{transform:translateX(0)}25%{transform:translateX(4px)}75%{transform:translateX(-4px)}}
-    @media(prefers-reduced-motion:reduce){.boat-track,.boat-rock,.water-drift{animation:none;transform:none}}
+    .boat-rock{transform-origin:1000px 184px;animation:gentle-bob 8s ease-in-out infinite}
+    .surface-wave{animation:passing-wave 8s ease-in-out infinite}
+    .wave-back{animation-delay:-2s}
+    .breeze{animation:sea-breeze 8s ease-in-out infinite;opacity:0}
+    .breeze-lines{fill:none;stroke:#cebdda;stroke-width:1.5;stroke-linecap:round}
+    .still-water{display:none}
+    @keyframes gentle-bob{0%,50%,100%{transform:translateY(0) rotate(0deg)}25%{transform:translateY(3px) rotate(0.35deg)}75%{transform:translateY(-3px) rotate(-0.35deg)}}
+    @keyframes passing-wave{0%,100%{d:path('M780 211 C798.333 209.429 816.667 208 835 208 C853.333 208 871.667 209.429 890 211 C908.333 212.571 926.667 214 945 214 C963.333 214 981.667 212.571 1000 211 C1018.333 209.429 1036.667 208 1055 208 C1073.333 208 1091.667 209.429 1110 211 C1128.333 212.571 1146.667 214 1165 214 C1183.333 214 1201.667 212.571 1220 211')}25%{d:path('M780 214 C798.333 214 816.667 212.571 835 211 C853.333 209.429 871.667 208 890 208 C908.333 208 926.667 209.429 945 211 C963.333 212.571 981.667 214 1000 214 C1018.333 214 1036.667 212.571 1055 211 C1073.333 209.429 1091.667 208 1110 208 C1128.333 208 1146.667 209.429 1165 211 C1183.333 212.571 1201.667 214 1220 214')}50%{d:path('M780 211 C798.333 212.571 816.667 214 835 214 C853.333 214 871.667 212.571 890 211 C908.333 209.429 926.667 208 945 208 C963.333 208 981.667 209.429 1000 211 C1018.333 212.571 1036.667 214 1055 214 C1073.333 214 1091.667 212.571 1110 211 C1128.333 209.429 1146.667 208 1165 208 C1183.333 208 1201.667 209.429 1220 211')}75%{d:path('M780 208 C798.333 208 816.667 209.429 835 211 C853.333 212.571 871.667 214 890 214 C908.333 214 926.667 212.571 945 211 C963.333 209.429 981.667 208 1000 208 C1018.333 208 1036.667 209.429 1055 211 C1073.333 212.571 1091.667 214 1110 214 C1128.333 214 1146.667 212.571 1165 211 C1183.333 209.429 1201.667 208 1220 208')}}
+    @keyframes sea-breeze{0%{transform:translateX(-120px);opacity:0}25%{transform:translateX(-40px);opacity:0.22}50%{transform:translateX(40px);opacity:0.132}75%,100%{transform:translateX(120px);opacity:0}}
+    @media(prefers-reduced-motion:reduce){.boat-rock,.surface-wave,.breeze{animation:none;transform:none}.animated-water,.breeze{display:none}.still-water{display:inline}}
   </style>
   <g clip-path="url(#edge)">
     <rect class="sky" width="1200" height="240"/>
@@ -35,11 +38,15 @@
       <path class="coast" opacity=".55" d="M860 192c38-31 74-20 108-31 37-12 54-8 81 2 35 13 68-5 107-4 17 0 32 4 44 9v72H860Z"/>
       <path class="ocean" d="M730 240c35-45 83-48 139-36 52 11 98 7 140-1 66-12 102-20 191-2v39Z"/>
       <g clip-path="url(#sailing-area)">
-        <g class="boat-track">
-          <g class="boat-rock"><use href="#boat"/></g>
-          <g transform="translate(-540 0)"><g class="boat-rock"><use href="#boat"/></g></g>
+        <g class="breeze">
+          <path class="breeze-lines" d="M916 93h34c13 0 20-4 23-10m-80 31h37c16 0 23-4 29-11m-24 36h27c10 0 18-3 22-9"/>
         </g>
-        <g class="water-drift">
+        <g class="boat-rock"><use href="#boat"/></g>
+        <g class="animated-water wave" opacity=".75">
+          <path class="surface-wave" d="M780 211 C798.333 209.429 816.667 208 835 208 C853.333 208 871.667 209.429 890 211 C908.333 212.571 926.667 214 945 214 C963.333 214 981.667 212.571 1000 211 C1018.333 209.429 1036.667 208 1055 208 C1073.333 208 1091.667 209.429 1110 211 C1128.333 212.571 1146.667 214 1165 214 C1183.333 214 1201.667 212.571 1220 211"/>
+          <g transform="translate(0 18)" opacity=".6"><path class="surface-wave wave-back" d="M780 211 C798.333 209.429 816.667 208 835 208 C853.333 208 871.667 209.429 890 211 C908.333 212.571 926.667 214 945 214 C963.333 214 981.667 212.571 1000 211 C1018.333 209.429 1036.667 208 1055 208 C1073.333 208 1091.667 209.429 1110 211 C1128.333 212.571 1146.667 214 1165 214 C1183.333 214 1201.667 212.571 1220 211"/></g>
+        </g>
+        <g class="still-water">
           <path class="wave" d="M779 223c30-9 54-7 80-2m51 3c35 0 59-4 83-7m65 0c29-6 57-6 89 0"/>
           <path class="wave" d="M895 235c38-1 71-5 104-10m70 4c26-3 50-2 76 2"/>
         </g>
