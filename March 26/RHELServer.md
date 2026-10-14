@@ -1,5 +1,11 @@
 [← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/entries/rhel-server-dusk.svg">
+  <source media="(prefers-color-scheme: light)" srcset="../assets/entries/rhel-server-day.svg">
+  <img alt="Headless RHEL server — sailboat illustration" src="../assets/entries/rhel-server-day.svg" width="1200">
+</picture>
+
 # Headless RHEL server
 
 <sub>March 2026 · RHEL homelab</sub>

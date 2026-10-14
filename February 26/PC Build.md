@@ -1,5 +1,11 @@
 [← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/entries/pc-build-dusk.svg">
+  <source media="(prefers-color-scheme: light)" srcset="../assets/entries/pc-build-day.svg">
+  <img alt="PC build — sailboat illustration" src="../assets/entries/pc-build-day.svg" width="1200">
+</picture>
+
 # PC build
 
 <sub>February 2026 · Hardware build</sub>

@@ -1,5 +1,11 @@
 [← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/entries/linux-ticket-resolutions-dusk.svg">
+  <source media="(prefers-color-scheme: light)" srcset="../assets/entries/linux-ticket-resolutions-day.svg">
+  <img alt="Linux ticket practice: two recorded resolutions — sailboat illustration" src="../assets/entries/linux-ticket-resolutions-day.svg" width="1200">
+</picture>
+
 # Linux ticket practice: two recorded resolutions
 
 <sub>May 2, 2026 · RHEL troubleshooting and least privilege</sub>

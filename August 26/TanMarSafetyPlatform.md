@@ -1,5 +1,11 @@
 [← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/entries/tanmar-dusk.svg">
+  <source media="(prefers-color-scheme: light)" srcset="../assets/entries/tanmar-day.svg">
+  <img alt="TanMar Safety Platform — sailboat illustration" src="../assets/entries/tanmar-day.svg" width="1200">
+</picture>
+
 # TanMar Safety Platform
 
 <sub>August 2026 · AI-assisted application modernization · In progress</sub>

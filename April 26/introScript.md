@@ -1,5 +1,11 @@
 [← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/entries/palehorse-dusk.svg">
+  <source media="(prefers-color-scheme: light)" srcset="../assets/entries/palehorse-day.svg">
+  <img alt="PaleHorse intro script — sailboat illustration" src="../assets/entries/palehorse-day.svg" width="1200">
+</picture>
+
 # PaleHorse intro script
 
 <sub>April 2026 · Bash scripting</sub>

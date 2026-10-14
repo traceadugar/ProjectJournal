@@ -1,5 +1,11 @@
 [← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/entries/powershell-dusk.svg">
+  <source media="(prefers-color-scheme: light)" srcset="../assets/entries/powershell-day.svg">
+  <img alt="PowerShell personalization — sailboat illustration" src="../assets/entries/powershell-day.svg" width="1200">
+</picture>
+
 # PowerShell personalization
 
 <sub>March 2026 · PowerShell customization</sub>

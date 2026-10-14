@@ -1,5 +1,11 @@
 [← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/entries/linux-ticket-queue-dusk.svg">
+  <source media="(prefers-color-scheme: light)" srcset="../assets/entries/linux-ticket-queue-day.svg">
+  <img alt="Linux Admin Ticket Queue — sailboat illustration" src="../assets/entries/linux-ticket-queue-day.svg" width="1200">
+</picture>
+
 # Linux Admin Ticket Queue
 
 <sub>April 2026 · AI-guided Linux practice</sub>

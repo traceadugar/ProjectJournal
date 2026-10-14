@@ -1,5 +1,11 @@
 [← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/entries/portfolio-refresh-dusk.svg">
+  <source media="(prefers-color-scheme: light)" srcset="../assets/entries/portfolio-refresh-day.svg">
+  <img alt="Portfolio recovery &amp; seaside redesign — sailboat illustration" src="../assets/entries/portfolio-refresh-day.svg" width="1200">
+</picture>
+
 # Portfolio recovery & seaside redesign
 
 <sub>October 2026 · React portfolio recovery and redesign</sub>

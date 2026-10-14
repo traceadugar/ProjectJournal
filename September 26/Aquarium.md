@@ -1,5 +1,11 @@
 [← Journal home](../README.md) · [Portfolio](https://traceportfolio.netlify.app/)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/entries/aquarium-dusk.svg">
+  <source media="(prefers-color-scheme: light)" srcset="../assets/entries/aquarium-day.svg">
+  <img alt="Aquarium — sailboat illustration" src="../assets/entries/aquarium-day.svg" width="1200">
+</picture>
+
 # Aquarium
 
 <sub>September 2026 · Godot simulation and AI workflow · In progress</sub>

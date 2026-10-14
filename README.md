@@ -27,7 +27,6 @@ Newest months first. Dates mark when the work began or took place; ongoing entri
 
 | Month | Entry | What it covers |
 | --- | --- | --- |
-| **October** | [GitHub profile and journal refresh](October%2026/GitHubRefresh.md) | Professional presentation, accurate project descriptions, and cohesive documentation |
 | **October** | [Portfolio recovery & seaside redesign](October%2026/PortfolioRefresh.md) | React recovery, synchronized lighting, bilingual usability, and deployment |
 | **September** | [Aquarium](September%2026/Aquarium.md) · In progress | Godot simulation, prompting-only development, context, and verification |
 | **August** | [TanMar Safety Platform](August%2026/TanMarSafetyPlatform.md) · In progress | AI-assisted modernization, training workflows, access controls, and verification |
