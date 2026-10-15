@@ -21,22 +21,12 @@
     <filter id="beam-soften" x="-10%" y="-15%" width="120%" height="130%" color-interpolation-filters="sRGB">
       <feGaussianBlur stdDeviation="36"/>
     </filter>
-    <radialGradient id="front-density">
-      <stop offset="0" stop-color="white" stop-opacity=".74"/>
-      <stop offset=".4" stop-color="white" stop-opacity=".66"/>
-      <stop offset=".78" stop-color="white" stop-opacity=".54"/>
-      <stop offset=".95" stop-color="white" stop-opacity=".08"/>
-      <stop offset="1" stop-color="white" stop-opacity="0"/>
-    </radialGradient>
     <filter id="ink-threshold" filterUnits="userSpaceOnUse" x="0" y="0" width="1200" height="240" color-interpolation-filters="sRGB">
       <feComponentTransfer><feFuncA type="discrete" tableValues="0 1"/></feComponentTransfer>
     </filter>
     <g id="lighthouse-field">
       <g class="beam-rotor">
         <path d="M993.5 84.5L-675.431 -589.792A1800 1800 0 0 0 -675.431 758.792Z" fill="url(#beam-strength)" filter="url(#beam-soften)"/>
-      </g>
-      <g class="beam-front-cone">
-        <ellipse cx="993.5" cy="84.5" rx="1450" ry="290" fill="url(#front-density)"/>
       </g>
     </g>
     <mask id="lighthouse-light" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="0" y="0" width="1200" height="240" style="mask-type:alpha">
@@ -49,23 +39,10 @@
       <g class="beam-rotor">
         <path d="M993.5 84.5L-637.854 -676.213A1800 1800 0 0 0 -637.854 845.213Z" fill="url(#beam-atmosphere)" filter="url(#beam-soften)"/>
       </g>
-      <g class="beam-front-cone">
-        <ellipse cx="993.5" cy="84.5" rx="1580" ry="335" fill="url(#front-haze)"/>
-      </g>
     </mask>
     <radialGradient id="lantern-halo">
       <stop offset="0" stop-color="#fce0a2" stop-opacity=".38"/>
       <stop offset="1" stop-color="#fce0a2" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="viewer-glow">
-      <stop offset="0" stop-color="#fff6df" stop-opacity="1"/>
-      <stop offset=".6" stop-color="#fff6df" stop-opacity=".6"/>
-      <stop offset="1" stop-color="#fff6df" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="front-haze">
-      <stop offset="0" stop-color="white" stop-opacity="1"/>
-      <stop offset=".6" stop-color="white" stop-opacity=".6"/>
-      <stop offset="1" stop-color="white" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <style>
@@ -75,13 +52,9 @@
     .beam-halo{fill:#fff1d7;opacity:0.28}
     .ink,.muted{stroke:#051026;stroke-width:1.15;stroke-linejoin:round;paint-order:stroke fill}
     .beam-ink{fill:#051026;stroke:none}
-    .beam-front-glint{animation:beacon-front 16s linear infinite}
-    .beam-front-cone{transform-box:view-box;transform-origin:993.5px 84.5px;animation:beacon-cone 16s linear infinite}
-    @keyframes beacon-orbit{0%{transform:scale(1,0.12)}3.125%{transform:scale(0.980785,0.135217)}6.25%{transform:scale(0.92388,0.149849)}9.375%{transform:scale(0.83147,0.163334)}12.5%{transform:scale(0.707107,0.175154)}15.625%{transform:scale(0.55557,0.184855)}18.75%{transform:scale(0.382683,0.192063)}21.875%{transform:scale(0.19509,0.196501)}25%{transform:scale(0,0.198)}28.125%{transform:scale(-0.19509,0.196501)}31.25%{transform:scale(-0.382683,0.192063)}34.375%{transform:scale(-0.55557,0.184855)}37.5%{transform:scale(-0.707107,0.175154)}40.625%{transform:scale(-0.83147,0.163334)}43.75%{transform:scale(-0.92388,0.149849)}46.875%{transform:scale(-0.980785,0.135217)}50%{transform:scale(-1,0.12)}53.125%{transform:scale(-0.980785,0.12)}56.25%{transform:scale(-0.92388,0.12)}59.375%{transform:scale(-0.83147,0.12)}62.5%{transform:scale(-0.707107,0.12)}65.625%{transform:scale(-0.55557,0.12)}66.666667%{transform:scale(-0.5,0.12)}68.75%{transform:scale(-0.382683,0.12)}71.875%{transform:scale(-0.19509,0.12)}75%{transform:scale(0,0.12)}78.125%{transform:scale(0.19509,0.12)}78.333333%{transform:scale(0.207912,0.12)}81.25%{transform:scale(0.382683,0.12)}84.375%{transform:scale(0.55557,0.12)}87.5%{transform:scale(0.707107,0.12)}90.625%{transform:scale(0.83147,0.12)}93.75%{transform:scale(0.92388,0.12)}96.875%{transform:scale(0.980785,0.12)}100%{transform:scale(1,0.12)}}
-    @keyframes beacon-depth{0%{opacity:1}3.125%{opacity:1}6.25%{opacity:1}9.375%{opacity:1}12.5%{opacity:1}15.625%{opacity:1}18.75%{opacity:1}21.875%{opacity:1}25%{opacity:1}28.125%{opacity:1}31.25%{opacity:1}34.375%{opacity:1}37.5%{opacity:1}40.625%{opacity:1}43.75%{opacity:1}46.875%{opacity:1}50%{opacity:1}53.125%{opacity:0.8125}56.25%{opacity:0.625}59.375%{opacity:0.4375}62.5%{opacity:0.25}65.625%{opacity:0.0625}66.666667%{opacity:0}68.75%{opacity:0}71.875%{opacity:0}75%{opacity:0}78.125%{opacity:0.9375}78.333333%{opacity:1}81.25%{opacity:1}84.375%{opacity:1}87.5%{opacity:1}90.625%{opacity:1}93.75%{opacity:1}96.875%{opacity:1}100%{opacity:1}}
-    @keyframes beacon-front{0%{opacity:0}3.125%{opacity:0}6.25%{opacity:0}9.375%{opacity:0}12.5%{opacity:0}15.625%{opacity:0}18.75%{opacity:0.019157}21.875%{opacity:0.372034}25%{opacity:1}28.125%{opacity:0.372034}31.25%{opacity:0.019157}34.375%{opacity:0}37.5%{opacity:0}40.625%{opacity:0}43.75%{opacity:0}46.875%{opacity:0}50%{opacity:0}53.125%{opacity:0}56.25%{opacity:0}59.375%{opacity:0}62.5%{opacity:0}65.625%{opacity:0}66.666667%{opacity:0}68.75%{opacity:0}71.875%{opacity:0}75%{opacity:0}78.125%{opacity:0}78.333333%{opacity:0}81.25%{opacity:0}84.375%{opacity:0}87.5%{opacity:0}90.625%{opacity:0}93.75%{opacity:0}96.875%{opacity:0}100%{opacity:0}}
-    @keyframes beacon-cone{0%{transform:scale(0)}3.125%{transform:scale(0.001449)}6.25%{transform:scale(0.021447)}9.375%{transform:scale(0.09527)}12.5%{transform:scale(0.25)}15.625%{transform:scale(0.477953)}18.75%{transform:scale(0.728553)}21.875%{transform:scale(0.925328)}25%{transform:scale(1)}28.125%{transform:scale(0.925328)}31.25%{transform:scale(0.728553)}34.375%{transform:scale(0.477953)}37.5%{transform:scale(0.25)}40.625%{transform:scale(0.09527)}43.75%{transform:scale(0.021447)}46.875%{transform:scale(0.001449)}50%{transform:scale(0)}53.125%{transform:scale(0)}56.25%{transform:scale(0)}59.375%{transform:scale(0)}62.5%{transform:scale(0)}65.625%{transform:scale(0)}66.666667%{transform:scale(0)}68.75%{transform:scale(0)}71.875%{transform:scale(0)}75%{transform:scale(0)}78.125%{transform:scale(0)}78.333333%{transform:scale(0)}81.25%{transform:scale(0)}84.375%{transform:scale(0)}87.5%{transform:scale(0)}90.625%{transform:scale(0)}93.75%{transform:scale(0)}96.875%{transform:scale(0)}100%{transform:scale(0)}}
-    @media(prefers-reduced-motion:reduce){.beam-rotor,.beam-front-cone,.beam-front-glint{animation:none}.beam-layer{display:none}}
+    @keyframes beacon-orbit{0%{transform:scale(1,0.12)}3.125%{transform:scale(0.980785,0.135217)}6.25%{transform:scale(0.92388,0.149849)}9.375%{transform:scale(0.83147,0.163334)}12.5%{transform:scale(0.707107,0.175154)}15.625%{transform:scale(0.55557,0.184855)}18.75%{transform:scale(0.382683,0.192063)}21.306369%{transform:scale(0.23,0.195909)}21.875%{transform:scale(0.19509,0.196501)}25%{transform:scale(0,0.198)}28.125%{transform:scale(-0.19509,0.196501)}31.25%{transform:scale(-0.382683,0.192063)}34.375%{transform:scale(-0.55557,0.184855)}37.5%{transform:scale(-0.707107,0.175154)}40.625%{transform:scale(-0.83147,0.163334)}43.75%{transform:scale(-0.92388,0.149849)}46.875%{transform:scale(-0.980785,0.135217)}50%{transform:scale(-1,0.12)}53.125%{transform:scale(-0.980785,0.12)}56.25%{transform:scale(-0.92388,0.12)}59.375%{transform:scale(-0.83147,0.12)}62.5%{transform:scale(-0.707107,0.12)}65.625%{transform:scale(-0.55557,0.12)}66.666667%{transform:scale(-0.5,0.12)}68.75%{transform:scale(-0.382683,0.12)}71.875%{transform:scale(-0.19509,0.12)}75%{transform:scale(0,0.12)}78.125%{transform:scale(0.19509,0.12)}78.693631%{transform:scale(0.23,0.12)}81.25%{transform:scale(0.382683,0.12)}84.375%{transform:scale(0.55557,0.12)}87.5%{transform:scale(0.707107,0.12)}90.625%{transform:scale(0.83147,0.12)}93.75%{transform:scale(0.92388,0.12)}96.875%{transform:scale(0.980785,0.12)}100%{transform:scale(1,0.12)}}
+    @keyframes beacon-depth{0%{opacity:1}3.125%{opacity:0.998163}6.25%{opacity:0.972614}9.375%{opacity:0.877257}12.5%{opacity:0.676006}15.625%{opacity:0.385147}18.75%{opacity:0.102364}21.306369%{opacity:0}21.875%{opacity:0}25%{opacity:0}28.125%{opacity:1}31.25%{opacity:1}34.375%{opacity:1}37.5%{opacity:1}40.625%{opacity:1}43.75%{opacity:1}46.875%{opacity:1}50%{opacity:1}53.125%{opacity:0.8125}56.25%{opacity:0.625}59.375%{opacity:0.4375}62.5%{opacity:0.25}65.625%{opacity:0.0625}66.666667%{opacity:0}68.75%{opacity:0}71.875%{opacity:0}75%{opacity:0}78.125%{opacity:0}78.693631%{opacity:0}81.25%{opacity:0.102364}84.375%{opacity:0.385147}87.5%{opacity:0.676006}90.625%{opacity:0.877257}93.75%{opacity:0.972614}96.875%{opacity:0.998163}100%{opacity:1}}
+    @media(prefers-reduced-motion:reduce){.beam-rotor{animation:none}.beam-layer{display:none}}
   </style>
   <g clip-path="url(#edge)">
     <rect class="sky" width="1200" height="240"/>
@@ -95,10 +68,6 @@
       <rect class="beam-halo beam-layer" width="1200" height="240" mask="url(#lighthouse-glow)"/>
       <rect class="beam-light beam-layer" width="1200" height="240" mask="url(#lighthouse-light)"/>
       <circle cx="993.5" cy="84.5" r="26" fill="url(#lantern-halo)"/>
-      <g class="beam-layer beam-front-glint">
-        <ellipse cx="993.5" cy="84.5" rx="980" ry="70" fill="url(#viewer-glow)" opacity="0.18"/>
-        <circle cx="993.5" cy="84.5" r="58" fill="url(#lantern-halo)" opacity=".75"/>
-      </g>
       <path class="tower" d="m978 94-13 82h57l-13-82Z"/>
       <path class="line" d="m978 94-13 82h57l-13-82Z"/>
       <rect class="tower" x="976" y="74" width="35" height="20" rx="2"/>
