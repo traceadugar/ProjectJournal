@@ -20,8 +20,6 @@ This is a working web project: a bilingual React site with a custom seaside inte
 
 ## Context
 
-I lost access to my previous GitHub account after losing access to its two-factor authentication. That made recovering the portfolio and establishing a reliable home for its source the first priority.
-
 The editable portfolio was recovered and connected to [my current repository](https://github.com/traceadugar/portfolio). Netlify now builds and publishes its `main` branch. Original history and earlier project screenshots were preserved, keeping the work useful even where old hosted demos and their dependent APIs had retired.
 
 I worked with **Codex** throughout the recovery and redesign. I set the visual and product direction, reviewed iterations, and requested refinements; Codex performed implementation and verification work. That collaboration is part of the project, and I do not present the AI-generated implementation as independently hand-written code.

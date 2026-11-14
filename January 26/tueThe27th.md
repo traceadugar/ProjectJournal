@@ -4,9 +4,7 @@
 
 <sub>January 27, 2026 · Journal origin · Revised October 14, 2026</sub>
 
-## A new account, a continuing path
-
-I started this account after losing access to the two-factor authentication on my old phone, which locked me out of my previous GitHub account. My [earlier work is still available on that profile](https://github.com/TraceDugar).
+## A continuing path
 
 This journal gives my newer work a home: software, hardware, Linux administration, and the decisions and troubleshooting behind those projects.
 
