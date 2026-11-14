@@ -14,7 +14,7 @@
 
 <sub>The PaleHorse login screen. Select the image to view it at full size.</sub>
 
-[View the Bash script](./intoScript/intro.sh)
+[View the Bash script](./introScript/intro.sh)
 
 ## Overview
 

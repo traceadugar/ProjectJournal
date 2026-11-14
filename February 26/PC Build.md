@@ -124,7 +124,7 @@ These headphones are really comfortable and drive crystal clear sound, and their
 
 <a href="./Images%20Folder/1TB%20NVME.png"><img src="./Images%20Folder/1TB%20NVME.png" alt="1TB NVME" width="480"></a>
 
-<a href="./Images%20Folder/2TN%20NVME.png"><img src="./Images%20Folder/2TN%20NVME.png" alt="2TN NVME" width="480"></a>
+<a href="./Images%20Folder/2tb-nvme.png"><img src="./Images%20Folder/2tb-nvme.png" alt="2 TB NVMe" width="480"></a>
 
 <a href="./Images%20Folder/8TB%20Storage.png"><img src="./Images%20Folder/8TB%20Storage.png" alt="8TB Storage" width="480"></a>
 
